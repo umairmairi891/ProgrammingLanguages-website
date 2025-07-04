@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-HMHj5KjK1eOW8AwYdUbeLu+1ylgGxE07Y1d6a8o+9XTx7fJVuVmRyI1YuZXYPP7wl2G4VqZYehf0fLo1ZJMPbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <div class="container-fluid nav-container">
+        <nav class="navbar  navbar-expand-lg">
+
+            <img src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" class="navbar-brand ms-4"
+                alt="" style="width: 80px; height: 50px;">
+
+            <button class="navbar-toggler bg-dark me-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainmenu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "> <i class="fa fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
+                <ul class="navbar-nav fs-5 ms-5">
+                    <li class="nav-item"><a href="" class="nav-link text-white ">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" id="" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Languages</a>
+                        <ul class="dropdown-menu bg-dark ">
+                            <li><a href="" class="dropdown-item text-white">JavaScript</a></li>
+                            <li><a href="" class="dropdown-item text-white">Python</a></li>
+                            <li><a href="" class="dropdown-item text-white">C++</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link text-white ">Tutorials</a></li>
+                    <li class="nav-item"><a href="" class="nav-link text-white ">Syntax</a></li>
+                    <li class="nav-item"><a href="" class="nav-link text-white ">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row mt-5 text-white px-md-5 px-1 no-gutters ">
+            <div class="col-md-8 text-white px-5 ">
+                <h2 class="fw-bold">Explore Every Programming Language in One place</h2>
+                <h5 class="lead  mt-4">Syntax,Tutorials and Tools for developers of all Levels</h5>
+                <button class="btn btn-primary mt-4 ">Browse Languages</button>
+                <button class="btn btn-light mt-4 ms-0 ms-md-3">Start Learning</button>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <img class="" src="/Images/Gemini_Generated_Image_jtostqjtostqjtos.png" alt="" width="100%"
+                    height="100%">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row overflow-hidden h-100">
+            <div class="col-md-4 bg-dark py-2 rounded px-4 ">
+                <label for="inputbox" class="label-input-form fw-bold text-white ms-3 fs-4">Languages</label>
+                <input type="text" placeholder="Search Languages" id="inputbox" class="form-control mt-2 ">
+                <ul class="list-unstyled  text-white ">
+                    <li class="mb-2 mt-2 container-list fw-bold fs-4  text-center  px-0 py-2">Popular Languages
+                    </li>
+                    <li class="mb-2 mt-2 container-list py-2 px-2" id="python" onclick="showImg()"><a href="">Python</a></li>
+                    <li class="mt-2 container-list py-2 px-2" id="javascript"><a href="">JavaScript</a></li>
+                    <li class="mt-2 container-list py-2 px-2"><a href="">Java</a></li>
+                    <li class="mt-2 container-list py-2 px-2"><a href="">C++</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8  rounded px-4">
+                <div class="button">
+                    <button class="btn text-white fw-bold  ms-5">OverView</button>
+                    <button class="btn text-white fw-bold ms-5">Syntax</button>
+                    <button class="btn text-white fw-bold ms-5">Examples</button>
+                    <button class="btn text-white fw-bold ms-5">Tutorials</button>
+                    <hr class="text-white">
+                    <div class="img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid mt-4">
+            <div class="row py-5 text-white px-4 ">
+                <div class="col-md-3 text-center">
+                    <h5>About Us</h5>
+                    <a href="">About Us</a>
+                </div>
+                <div class="col-md-3  text-center">
+                    <h5>Quick Links</h5>
+                    <a href="">Quick links</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5>Contact Info</h5>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5>Social links</h5>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white py-2" style="font-family: 'Times New Roman', Times, serif;">
+                    <p class="">&copy; 2025 CodeCompanion : All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/JavaScript/Home.js"></script>
+</body>
+</html>
