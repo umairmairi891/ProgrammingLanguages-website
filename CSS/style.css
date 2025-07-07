@@ -1,6 +1,5 @@
 body{
-    margin: 0;
-    padding: 0;
+margin: 0;
     background-color: #0F1630;
 }
 .navbar-brand{
@@ -44,15 +43,30 @@ li.container-list a{
 }
 footer{
     background-color: #0c1023;
-    font-family: Courier, monospace;
 }
 footer a{
     text-decoration: none;
     color: white;
-    font-family: sans-serif;
-    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+footer h5{
+    font-weight: bold;
 }
 .img{
     width: 80%;
     height: 80%;
+}
+.fixed-column-height{
+    height: 200px;
+}
+
+@media (max-width:500px) {
+    footer h5{
+        text-align: left;
+    }
+    footer a{
+        text-align: left;
+    }
+     
 }

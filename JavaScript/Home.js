@@ -7,14 +7,14 @@ const button = document.querySelectorAll('.button');
 Python.addEventListener('click', () => {
     const img = document.createElement('img');
     img.className = 'img'
-    img.setAttribute('src', "/Images/7e418ba4bb7340b5b79d3004e0918e2e.webp")
+    img.setAttribute('src', "/Images/overview.png")
     imgDiv.appendChild(img)
     
     button.addEventListener('click', () => {
         if (button.textContext == 'Syntax') {
             const syntaxImg = document.createElement('img');
             syntaxImg.className = 'img';
-            syntaxImg.setAttribute('src', '/Images/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg');
+            syntaxImg.setAttribute('src', '');
             imgDiv.appendChild(syntaxImg)
         }
     })
