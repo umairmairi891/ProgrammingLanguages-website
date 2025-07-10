@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
         body {
-            background-color: #0F1630;
+            margin: 0;
+            padding: 0;
         }
 
         .navbar-brand {
@@ -38,6 +39,10 @@
             background-color: black;
             border-radius: 5px;
             transition: .3s;
+        }
+
+        .nav-container {
+            background-color: #040c2e;
         }
 
         .dropdown li a:hover {
@@ -63,8 +68,42 @@
             font-weight: bold;
         }
 
+        h1,
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+        }
+
         h5.h5 {
             color: rgb(77, 77, 209);
+        }
+
+        ol li span {
+            font-weight: 400;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .heading {
+            border-left: 4px solid blue;
+            padding-left: 0.75rem;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-title {
+
+            color: #283593;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+
+        .card-bg {
+            background-color: #b3b5c0;
         }
 
         @media (max-width:500px) {
@@ -95,10 +134,10 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
-                <ul class="navbar-nav fs-5 ms-5">
-                    <li class="nav-item"><a href="/HTML/Home.html" class="nav-link text-white ">Home</a></li>
+                <ul class="navbar-nav fs-5 ms-3  ms-md-5">
+                    <li class="nav-item"><a href="/HTML/index.html" class="nav-link text-white px-2">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a href="" class="nav-link text-white dropdown-toggle" id="" data-bs-target="dropdown"
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" id="" data-bs-target="dropdown"
                             data-bs-toggle="dropdown">Languages</a>
                         <ul class="dropdown-menu bg-dark ">
                             <li><a href="" class="dropdown-item text-white">JavaScript</a></li>
@@ -106,36 +145,187 @@
                             <li><a href="" class="dropdown-item text-white">C++</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="" class="nav-link text-white ">Community</a></li>
+                    <li class="nav-item"><a href="" class="nav-link text-white px-2">Community</a></li>
                     <li class="nav-item dropdown">
-                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="dropdown" data-bs-toggle="dropdown">Syntax</a>
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Syntax</a>
                         <ul class="dropdown-menu bg-dark">
-                            <li><a href="" class="dropdown-item text-white">Python Syntax</a></li>
+                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a></li>
                             <li><a href="" class="dropdown-item text-white">JavaScript Syntax</a></li>
                             <li><a href="" class="dropdown-item text-white">C++ Syntax</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white ">About</a></li>
+                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2">About</a></li>
                 </ul>
             </div>
         </nav>
     </div>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4 rounded">
+                    <h1 class="heading card-title"><span class="me-3">🔐</span>Privacy Policy</h1>
+                    <p class="lead px-4">Welcome to CodeCompanion, a platform dedicated to providing syntax, examples
+                        and
+                        resources for various programming languages. Your privacy is important to us. This Privacy
+                        Policy
+                        explains how we collect, use and protect your information when you use our website</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">📖</span> Information We Collect</h2>
+                    </div>
+                    <div class="card-text">
+                        <p class="lead px-3 ms-4 mt-3">We do not collect personal information from visitors
+                            directly. However, we
+                            may collect
+                            non-personal data such as:
+                        </p>
+                        <ol class="lead list-unstyled">
+                            <li><span class="me-3">✅</span>Browser type and version</li>
+                            <li><span class="me-3">✅</span>Page visited and time spend</li>
+                            <li><span class="me-3">✅</span>Reffering websites</li>
+                            <li><span class="me-3">✅</span>Device type an screen resolution</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow  p-4">
+                    <div class="card-title ">
+                        <h2 class="heading fw-bold"><span class="me-3">📌</span>Third-Party Links</h2>
+                    </div>
+                    <div class="card-text">
+                        <p class="lead px-4">Our website may include links to external resources(e.g programming
+                            documentation, code
+                            repositories). We are not responsible for the privacy practices of those websites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">🍪</span>Use of Cookies and Analytics</h2>
+                    </div>
+                    <div class="card-text">
+
+                        <p class="lead">Oue site may use cookies and third-party services such as</p>
+                        <ol class="lead list-unstyled mt-2">
+                            <li><span class="me-3">✅</span> Google Analytics/Cloudflare insights to track site traffic
+                            </li>
+                            <li><span class="me-3">✅</span>Google Fonts/Font Awesome for UI styling</li>
+                            <li><span class="me-3">✅</span>Github embeds/ Youtube videos for educational content</li>
+                        </ol>
+                        <p class="lead ">These third-party services may collect information according to their own
+                            privacy
+                            Policies. You can disable cookies through your browser setting if you prefer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">👶</span>Children's Privacy</h2>
+                    </div>
+                    <div class="card-text">
+
+                        <p class="lead">Our site is not directed to children under the age of 13. We do not knowingly
+                            collect
+                            any personal information from children.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">🔒</span>Data Security</h2>
+                    </div>
+                    <div class="card-text">
+                        <p class="lead">We do not store any personal data on our servers. All static content is served
+                            securely
+                            via HTTPS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">📝</span>How we use the information</h2>
+                    </div>
+                    <div class="card-text">
+                        <p class="lead ">The data we collect is used to</p>
+                        <ol class="lead list-unstyled">
+                            <li><span class="me-3">✅</span>Analyze website traffic</li>
+                            <li><span class="me-3">✅</span>Improve website structure and content</li>
+                            <li><span class="me-3">✅</span>Ensure compatibility across devices</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">📞</span>Contact Us</h2>
+                    </div>
+                    <div class="card-text px-4">
+                          <p class="lead">If you have any question or concern about this Privacy Policy, please contact us
+                            at:</p>
+                        <span style="color: #283593;"><i class="fa fa-envelope"></i> CodeCompanion@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold"><span class="me-3">📃</span>Changes to this Privacy Policy</h2>
+                    </div>
+                    <div class="card-text">
+                       
+                <p class="lead">We may update this Policy occasionally. The updated version will always be available on
+                    this apge with a reevised date </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <div class="container-fluid mt-4 ">
             <div class="row py-5 text-white px-4 ">
                 <div class="col-sm-3 text-start mt-4">
                     <h5>About Us</h5>
-                    <a href="" class="d-block mt-2">Our Mission</a>
+                    <a href="" class="d-block mt-2">Community</a>
                     <a href="/HTML/About.html" class="d-block mt-2">About Us</a>
-                    <a href="" class="d-block mt-2">Career</a>
-                    <a href="" class="d-block mt-2">Team</a>
+                    <a href="/HTML/Career.html" class="d-block mt-2">Career</a>
+                    <a href="/HTML/Team.html" class="d-block mt-2">Team</a>
                 </div>
                 <div class="col-sm-3 text-start mt-4 ">
                     <h5>Quick Links</h5>
-                    <a href="" class="d-block mt-2">Documentation</a>
+                    <a href="/HTML/Documentation.html" class="d-block mt-2">Documentation</a>
                     <a href="" class="d-block mt-2">API Reference</a>
-                    <a href="" class="d-block mt-2">Blog</a>
+                    <a href="/HTML/Blog.html" class="d-block mt-2">Blog</a>
                 </div>
                 <div class="col-sm-3 text-start mt-4 ">
                     <h5>Contact Info</h5>
