@@ -60,28 +60,75 @@
 
         h1,
         h2,
-        h3 {
+        h3,
+        h4 {
             font-family: 'Times New Roman', Times, serif;
             font-weight: 500;
         }
-         .text-justify{
+
+        .text-justify {
             text-align: justify;
-         }
-        p span {
-        font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul li span {
+            font-family: 'Times New Roman', Times, serif;
             font-weight: 600;
         }
-   p a{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-   }
+
+        p a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
         footer a i {
             color: antiquewhite;
         }
 
         footer h5 {
             font-weight: bold;
+        }
+
+        .heading {
+            border-left: 4px solid blue;
+            padding-left: 0.75rem;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .bg {
+            background: linear-gradient(135deg, #283593, #7B1FA2);
+        }
+
+        .card h2 {
+            color: #303F9F;
+        }
+
+        .text-indigo {
+            color: #E8EAF6;
+        }
+
+        .card-title {
+
+            color: #283593;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .card-mission {
+            color: #303F9F;
+            font-weight: 400;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .card-bg {
+            background-color: #E8EAF6;
         }
 
         @media (max-width:500px) {
@@ -128,7 +175,8 @@
                         <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown"
                             data-bs-toggle="dropdown">Syntax</a>
                         <ul class="dropdown-menu bg-dark">
-                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a></li>
+                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
+                            </li>
                             <li><a href="" class="dropdown-item text-white">JavaScript Syntax</a></li>
                             <li><a href="" class="dropdown-item text-white">C++ Syntax</a></li>
                         </ul>
@@ -138,66 +186,147 @@
             </div>
         </nav>
     </div>
-    <div class="container bg-light py-5">
-        <div class="row ms-md-4 ms-2">
-            <div class="col-md-6 px-md-0 px-3">
-                <h1><i class="fa fa-users py-3"></i> Career Opportunities</h1>
-                <h3>Join us in Empowering the Future of progrmming</h3>
-                <p class="lead text-justify">At <strong>CodeCompanion</strong>, we are passionate about making programming knowledge
-                    accessible, organized and easy to understand for everyone, from beginners to experienced developers.
-                    We believe that coding is for <strong>everyone</strong> and we are building a platform that supports
-                    learning across all major programming languages and frameworks.</p>
-            </div>
-        </div>
-        <div class="row ms-md-4 ms-2 mt-4">
-            <div class="col-md-6">
-                <h2>Why Work With US</h2>
-                <p class="lead "><i class="fa fa-globe"></i> <span>Global Impact:</span> Help millions of learners and
-                    developers around the world</p>
-                <p class="lead"><i class="fa fa-graduation-cap"></i><span>  Education-Focused:</span> Contribute to a platform that empowers people to learn,
-                    teach and grow</p>
-                <p class="lead"><i class="fa fa-desktop"></i><span>  Tech-Driven Culture:</span> Work on real world web technologies, from front-end to
-                    back-end</p>
-                <p class="lead"><i class="fa fa-handshake-o"></i><span> Flexible-Collaboration:</span> We value contributions from
-                    remote developers, freelancers , educators and open source enthusaiasts.</p>
-            </div>
-        </div>
-        <div class="row ms-md-4 ms-2 mt-4">
-            <div class="col-md-6">
-                <div class="jumbotron">
-                    <h2>Open Roles</h2>
-                    <span class="fs-4 mb-2" style="font-family: 'Times New Roman', Times, serif;">Content Writers & Technical Authors</span>
-                    <p class="lead">Create high quality articles, tutorials and syntax guide</p>
-                    <p class="lead">Languages: Python, JavaScript, c++, Java ,Html/CSS and more</p>
-                    <span class="fs-4" style="font-family: 'Times New Roman', Times, serif;">Web Developers</span>
-                    <p class="lead">Enhance the site features, responsiveness and performance</p>
-                    <p class="lead">Skills: HTML, CSS , JavaScript and Github</p>
-                    <span class="fs-4" style="font-family: 'Times New Roman', Times, serif;">SEO & Digital Marketing Specialists</span>
-                    <p class="lead">Help us reach more learners globally through strategic outreach.</p>
+
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4 card-bg">
+                    <div class="card-title">
+                        <h1 class="heading fw-bold text-center text-dark"><i class="fa fa-users py-3"></i> Career
+                            Opportunities</h1>
+                    </div>
+                    <div class="card-text text-center ">
+                        <h2 class="text-dark">Join us in Empowering the Future of programming</h2>
+
+                        <p class="lead text-start px-md-5 px-1 ">At <strong>CodeCompanion</strong>, we are passionate
+                            about making
+                            programming knowledge
+                            accessible, organized and easy to understand for everyone, from beginners to experienced
+                            developers.
+                            We believe that coding is for <strong>everyone</strong> and we are building a platform that
+                            supports
+                            learning across all major programming languages and frameworks.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row ms-md-4 ms-2 mt-4">
-            <div class="col-md-6">
-                <h2>Who Should Apply?</h2>
-                <ol class="lead list-unstyled">
-                    <li>Progrmming students and hobbyists</li>
-                    <li>Professional developers wanting to give back</li>
-                    <li>Teachers or trainers in tech educators</li>
-                    <li>Freelancers or open-source contributers</li>
-                </ol>
+
+        <div class="row py-3">
+            <div class="col-md-12 ">
+                <div class="card card-shadow p-4">
+                    <div class="card-body  ">
+                        <div class="card-title">
+                            <h2 class="heading fw-bold">Why Work With US</h2>
+                        </div>
+                        <div class="card-text mt-3">
+                            <ul class="lead ">
+                                <li class="mt-2"><i class="fa fa-globe"></i> <span>Global Impact:</span> Help millions
+                                    of learners
+                                    and
+                                    developers around the world</li>
+                                <li class="mt-2"><i class="fa fa-graduation-cap"></i><span> Education-Focused:</span>
+                                    Contribute to a
+                                    platform that empowers people to learn,
+                                    teach and grow</li>
+                                <li class="mt-2"><i class="fa fa-desktop"></i><span> Tech-Driven Culture:</span> Work on
+                                    real world
+                                    web
+                                    technologies, from front-end to
+                                    back-end</li>
+                                <li class="mt-2"><i class="fa fa-handshake-o"></i><span> Flexible-Collaboration:</span>
+                                    We value
+                                    contributions from
+                                    remote developers, freelancers , educators and open source enthusaiasts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row ms-md-4 ms-2 mt-4">
-            <div class="col-md-6">
-                <h2>How to Apply</h2>
-                <p class="lead">Send us your resume, portfolio, Github profile or even a sample article or code snippet.</p>
-                <p class="lead"><i class="fa fa-envelope"></i>  Email::careers@CodeCompanion.com </p>
-                <p class="lead"><i class="fa fa-globe"></i> Website:: www.CodeCompanion.com/career</p>
-                <p class="lead"><i class="fa fa-paper-plane"></i> Or contact us directly through our <a href="">Contact us</a> page</p>
+
+        <div class="row py-3">
+            <div class="co-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2 class="heading fw-bold">Open Roles</h2>
+                        </div>
+                        <div class="card-text">
+                            <ul>
+                                <li>
+                                    <h4>Content Writers & Technical Authors</h4>
+                                    <ul class="lead">
+                                        <li>Create high quality articles, tutorials and syntax guide</li>
+                                        <li>Languages: Python, JavaScript, c++, Java ,Html/CSS and more</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-2">
+                                    <h4>Web Developers</h4>
+                                    <ul class="lead">
+                                        <li>Enhance the site features, responsiveness and performance</li>
+                                        <li>Skills: HTML, CSS , JavaScript and Github</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-2">
+                                    <h4>SEO & Digital Marketing Specialists</h4>
+                                    <ul class="lead">
+                                        <li>Help us reach more learners globally through strategic outreach.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="row py-3">
+            <div class="co-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-body">
+                        <div class="card-title">
+
+                            <h2 class="fw-bold heading">Who Should Apply?</h2>
+                        </div>
+                        <div class="card-text">
+                            <ul class="lead ">
+                                <li>Progrmming students and hobbyists</li>
+                                <li>Professional developers wanting to give back</li>
+                                <li>Teachers or trainers in tech educators</li>
+                                <li>Freelancers or open-source contributers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="co-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-body">
+                        <div class="card-title">
+
+                            <h2 class="heading fw-bold">How to Apply</h2>
+                        </div>
+                        <div class="card-text">
+                            <p class="lead">Send us your resume, portfolio, Github profile or even a sample article or
+                                code snippet.
+                            </p>
+                            <ul>
+                                <li class="lead"><i class="fa fa-envelope"></i> Email::careers@CodeCompanion.com </li>
+                                <li class="lead"><i class="fa fa-globe"></i> Website:: www.CodeCompanion.com/career</li >
+                                <li class="lead"><i class="fa fa-paper-plane"></i> Or contact us directly through our <a
+                                        href="" style="text-decoration: none;">Contact us</a> page</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
     <footer>
         <div class="container-fluid py-2 ">
             <div class="row py-5 text-white px-4 ">
