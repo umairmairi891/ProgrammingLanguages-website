@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/Language.css">
+    <style>
+        button a {
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid nav-container ">
+        <nav class="navbar  navbar-expand-lg ">
+
+            <img src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" class="navbar-brand ms-4"
+                alt="" style="width: 90px; height: 50px;">
+
+            <button class="navbar-toggler text-white  me-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainmenu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "> <i class="fa fa-bars mb-1" style="font-size: 36px;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
+                <ul class="navbar-nav fs-5 ms-3  ms-md-5">
+                    <li class="nav-item"><a href="/index.html" class="nav-link text-white px-2">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" id="" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Languages</a>
+                        <ul class="dropdown-menu bg-dark ">
+                            <li><a href="/HTML/JavaScript.html" class="dropdown-item text-white">JavaScript</a></li>
+                            <li><a href="" class="dropdown-item text-white">Python</a></li>
+                            <li><a href="" class="dropdown-item text-white">C++</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/HTML/Community.html" class="nav-link text-white px-2">Community</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Syntax</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
+                            </li>
+                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript Syntax</a></li>
+                            <li><a href="" class="dropdown-item text-white">C++ Syntax</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<div class="sidebar py-3">
+<ul class="list-unstyled px- lead">
+    <li class="text-end">
+        <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
+    </li>
+    <li data-bs-toggle="modal" data-bs-target="#introduction">Introduction</li>
+
+    <div class="modal fade" id="introduction">
+        <div class="modal-dialog   modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center card-title heading">JavaScript Introduction</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start" >JavaScript, often abbreviated as JS, is a programming language and core technology of the world wide web, alongside HTML and CSS.99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript Engine that execute the client code.
+                    </p>
+                    <h2 class="text-start fw-bold">History</h2>
+                    <p class="lead px-2 text-start">
+                        JavaScript was invented by <strong>Brendan Eich</strong> in 1995. It was developed for Netscape 2 and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to developed JavaScript for Firefox browsers.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <li data-bs-target="#working" data-bs-toggle="modal">Working</li>
+
+<div class="modal fade " id="working">
+        <div class="modal-dialog  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start" >
+                        JavaScript code is executed by a JavaScript engine, which is program designed to interpret and execute JavaScript code. These engines are found in web browsers and also in server side runtimes like Node.js.
+                    </p>
+                    <h2 class="text-start fw-bold">Parsing and AST Generation</h2>
+                    <p class="lead px-2 text-start" >
+                      The JavaScript engine first parses the code breaking it down into a structured representation called an  <strong> Abstract Syntax Tree (AST).</strong> This tree represents the grammatical strucure of the code.
+                    </p>
+                    <h2 class="text-start fw-bold">Interpretation and Bytecode Generation</h2>
+                    <p class="lead px-2 text-start">The AST is then interpreted and in many modren engines, bytecode is generated. Bytecode is a low-level representation of the code that is more efficient for the machine to process than the raw source code.</p>
+                    <h2 class="text-start fw-bold">Just-In-Time Compilation</h2>
+                    <p class="lead px-2 text-start">To optimize performance, JavaScript engines employ Just-In-Time Compilation. This process combines interpretation with Compilation. Frequently executed or hot code paths are identified and compiled into highly optimized machine code, which can be executed directly by thr computer hardware.</p>
+                    <h2 class="text-start fw-bold">Memory Management</h2>
+                    <p class="lead px-2 text-start">JavaScript engines also manage memory. Objects and data structures with longer lifetimes are stored in Heap, which is dynamically managed. A Garbage collecter automatically identifies and reclaims memory that is no longer being used by the program.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <li>Variables</li>
+    <li>Data Types</li>
+    <li>Functions</li>
+    <li>Loops</li>
+</ul>
+</div>
+
+
+    <div class="container">
+        <div class="row py-5 ">
+            <div class="col-md-12  ">
+                <div class="card card-shadow card-bg text-center">
+                    <h1 class="fw-bold">JavaScript</h1>
+                    <p class="lead px-5 px-md-1">The language of the web — build interactive websites and powerful
+                        applications.</p>
+                    <div class="text-center py-3">
+                        <button class="btn btn-primary me-3" id="Showside" onclick="show()">Start Learning More....</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4 ">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">🔤 Syntax Overview</h2>
+                    </div>
+                    <div class="card-text">
+                        <div class="syntax rounded w-100">
+                            <pre class="px-5 py-2">
+// Variable Declaration
+let name = "JavaScript";
+
+// Function
+function greet(user) {
+  return "Hello, " + user;
+}
+
+// Loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">💡 Key Features</h2>
+                    </div>
+                    <div class="card-text">
+                        <ul class="lead">
+                            <li>Interpreted, high-level scripting language</li>
+                            <li>Supports object-oriented and functional programming</li>
+                            <li>Runs in browsers and on servers (via Node.js)</li>
+                            <li>Massive ecosystem of libraries and frameworks (React, Vue, etc.)</li>
+                            <li>Asynchronous programming with Promises and async/await</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4">
+                    <h2 class="heading fw-bold">🛠️ Common Use Cases</h2>
+                    <div class="row">
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-shadow card-bg p-4">
+                                <h4>Web Development</h4>
+                                <p class="lead">Build interactive websites using plain JavaScript or frameworks like
+                                    React and Vue.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4 ">
+                            <div class="card card-shadow card-bg p-4 h-100">
+                                <h4>Server-Side Apps</h4>
+                                <p class="lead">Use Node.js to create fast and scalable backend services.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-shadow card-bg p-4 h-100">
+                                <h4>Mobile & Desktop Apps</h4>
+                                <p class="lead">Develop apps using frameworks like React Native or Electron.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="fw-bold heading">📚 Learning Resources</h2>
+                    </div>
+                    <div class="card-text">
+                        <ul class="lead">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript
+                                    Docs</a></li>
+                            <li><a href="https://javascript.info/">JavaScript.info (Modern JS)</a></li>
+                            <li><a href="https://www.freecodecamp.org/learn/">freeCodeCamp JavaScript Tutorials</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="fw-bold">🧭 Related Languages</h2>
+                        <div class="btn-group mt-4 px-4">
+                            <button class="btn btn-primary"><a href="/HTML/Pythonsyntax.html">Python</a></button>
+                            <button class="btn btn-warning"><a href="">Java</a></button>
+                            <button class="btn btn-secondary"><a href="">C++</a></button>
+                            <button class="btn btn-danger"><a href="">HTML</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid ">
+            <div class="row py-5 ms-md-3 ms-0 text-white px-4 ">
+                <div class="col-sm-3 text-start mt-4">
+                    <h5>About Us</h5>
+                    <a href="/HTML/Community.html" class="d-block mt-2">Community</a>
+                    <a href="/HTML/About.html" class="d-block mt-2">About Us</a>
+                    <a href="/HTML/Career.html" class="d-block mt-2">Career</a>
+                    <a href="/HTML/Team.html" class="d-block mt-2">Team</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4 ">
+                    <h5>Quick Links</h5>
+                    <a href="/HTML/Documentation.html" class="d-block mt-2">Documentation</a>
+                    <a href="/HTML/API.html" class="d-block mt-2">API Reference</a>
+                    <a href="/HTML/Blog.html" class="d-block mt-2">Blog</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4 ">
+                    <h5>Contact Info</h5>
+                    <a href="/HTML/support.html" class="d-block mt-2">Support Center</a>
+                    <a href="/HTML/Privacy.html" class="d-block mt-2">Privacy Policy</a>
+                    <a href="/HTML/Contact.html" class="d-block mt-2">Contact Us</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4">
+                    <h5>Social links</h5>
+                    <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white py-2" style="font-family: 'Lato', serif; ">
+                    <p class="">&copy; 2025 CodeCompanion : All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const sidebar=document.querySelector('.sidebar');
+      function show(){
+        sidebar.style.display='block';
+      }
+
+    function closeSide(){
+        sidebar.style.display='none';
+    }
+
+</script>
+</html>
