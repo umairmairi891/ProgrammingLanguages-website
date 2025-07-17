@@ -67,7 +67,7 @@
     </div>
 
 <div class="sidebar py-3">
-<ul class="list-unstyled px- lead">
+<ul class="list-unstyled  lead ">
     <li class="text-end">
         <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
     </li>
@@ -126,7 +126,79 @@
 
 
     <li>Variables</li>
-    <li>Data Types</li>
+    <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
+
+
+<div class="modal fade " id="datatypes">
+        <div class="modal-dialog    modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead text-start">JavaScript categorized data into two types: <strong> Primitive</strong> and <strong>Reference</strong></p>
+                    <h2 class="text-start fw-bold">Primitive Data Types</h2>
+                    <p class="lead px-2 text-start">These are immutable values, meaning their value cannot be changed after creation. There are seven priitive data types in JavaScript</p>
+                    <p class="lead px-2 text-start"><strong class="fw-bold">String:</strong> Represents textual data, enclosed in single quotes, double quotes or backticks.</p>
+                    <div class="syntax py-2 rounded text-start px-2">
+                        <pre class="">
+let name='Alice';
+let greeting=`Hello, ${name}`
+                        </pre>
+                    </div>
+<hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Number:</strong> Represents both integer and floating-point numbers. Includes special values like Infinity and NaN.</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let age=30;
+let price=9.99
+                        </pre>
+                    </div>
+<hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Boolean:</strong>Represents logical entities, with values true or false</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let isactive=true;
+let isloggedIn=false
+                        </pre>
+                    </div>
+<hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Undefined:</strong> Represents a variable that has been declared but not yet assigned a value.</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let unassignedVariable; 
+// unassignedVariable is Undefined
+                        </pre>
+                    </div>
+<hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Null:</strong> Represents the intentational absense of any object value. It is a primitive value but <strong>typeof null</strong> rerurns object due to a historical quirk</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let emptyValue=null;
+let empty=null
+                        </pre>
+                    </div>
+<hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Bigint:</strong> Represents whole numbers larger than 2 <sup>53</sup> -1, which is the maximum safe integer for the Number type. Appended with an n.</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let largeNumber=9007199254740991n
+                        </pre>
+                    </div>
+<hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Symbol:</strong> A unique and immutable primitive value, often used as obejct property key to avoid naming collision.</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+const id= Symbol('uniqueId')
+                        </pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <li>Functions</li>
     <li>Loops</li>
 </ul>
