@@ -12,13 +12,16 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/Language.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         button a {
             text-decoration: none;
             color: black;
             font-weight: 400;
         }
-        
+        .sidebar ul{
+            animation-duration: 0.5s;
+        }
     </style>
 </head>
 
@@ -56,8 +59,9 @@
                         <ul class="dropdown-menu bg-dark">
                             <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
                             </li>
-                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript Syntax</a></li>
-                            <li><a href="" class="dropdown-item text-white">C++ Syntax</a></li>
+                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript
+                                    Syntax</a></li>
+                            <li><a href="/HTML/C++syntax.html" class="dropdown-item text-white">C++ Syntax</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2">About</a></li>
@@ -66,143 +70,174 @@
         </nav>
     </div>
 
-<div class="sidebar py-3">
-<ul class="list-unstyled  lead ">
-    <li class="text-end">
-        <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
-    </li>
-    <li data-bs-toggle="modal" data-bs-target="#introduction">Introduction</li>
+    <div class="sidebar py-3 animate__animated  ">
+        <ul class="list-unstyled animate__animated  animate__fadeInLeft  lead ">
+            <li class="text-end">
+                <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#introduction">Introduction</li>
 
-    <div class="modal fade" id="introduction">
-        <div class="modal-dialog   modal-dialog-scrollable rounded">
-            <div class="div modal-content text-center">
-                <div class="modal-header ">
-                    <h1 class="modal-title text-center  card-title heading">JavaScript Introduction</h1>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal fade" id="introduction">
+                <div class="modal-dialog   modal-dialog-scrollable rounded">
+                    <div class="div modal-content text-center">
+                        <div class="modal-header ">
+                            <h1 class="modal-title text-center  card-title heading">JavaScript Introduction</h1>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <p class="lead px-2 text-start">JavaScript, often abbreviated as JS, is a programming
+                                language and core technology of the world wide web, alongside HTML and CSS.99% of
+                                websites use JavaScript on the client side for webpage behavior. Web browsers have a
+                                dedicated JavaScript Engine that execute the client code.
+                            </p>
+                            <h2 class="text-start fw-bold">History</h2>
+                            <p class="lead px-2 text-start">
+                                JavaScript was invented by <strong>Brendan Eich</strong> in 1995. It was developed for
+                                Netscape 2 and became the ECMA-262 standard in 1997. After Netscape handed JavaScript
+                                over to ECMA, the Mozilla foundation continued to developed JavaScript for Firefox
+                                browsers.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="modal-body ">
-                    <p class="lead px-2 text-start" >JavaScript, often abbreviated as JS, is a programming language and core technology of the world wide web, alongside HTML and CSS.99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript Engine that execute the client code.
-                    </p>
-                    <h2 class="text-start fw-bold">History</h2>
-                    <p class="lead px-2 text-start">
-                        JavaScript was invented by <strong>Brendan Eich</strong> in 1995. It was developed for Netscape 2 and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to developed JavaScript for Firefox browsers.
-                    </p>
-                </div>
-                
             </div>
-        </div>
-    </div>
 
 
-    <li data-bs-target="#working" data-bs-toggle="modal">Working</li>
+            <li data-bs-target="#working" data-bs-toggle="modal">Working</li>
 
-<div class="modal fade " id="working">
-        <div class="modal-dialog  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
-            <div class="div modal-content text-center">
-                <div class="modal-header ">
-                    <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal fade " id="working">
+                <div class="modal-dialog  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
+                    <div class="div modal-content text-center">
+                        <div class="modal-header ">
+                            <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <p class="lead px-2 text-start">
+                                JavaScript code is executed by a JavaScript engine, which is program designed to
+                                interpret and execute JavaScript code. These engines are found in web browsers and also
+                                in server side runtimes like Node.js.
+                            </p>
+                            <h2 class="text-start fw-bold">Parsing and AST Generation</h2>
+                            <p class="lead px-2 text-start">
+                                The JavaScript engine first parses the code breaking it down into a structured
+                                representation called an <strong> Abstract Syntax Tree (AST).</strong> This tree
+                                represents the grammatical strucure of the code.
+                            </p>
+                            <h2 class="text-start fw-bold">Interpretation and Bytecode Generation</h2>
+                            <p class="lead px-2 text-start">The AST is then interpreted and in many modren engines,
+                                bytecode is generated. Bytecode is a low-level representation of the code that is more
+                                efficient for the machine to process than the raw source code.</p>
+                            <h2 class="text-start fw-bold">Just-In-Time Compilation</h2>
+                            <p class="lead px-2 text-start">To optimize performance, JavaScript engines employ
+                                Just-In-Time Compilation. This process combines interpretation with Compilation.
+                                Frequently executed or hot code paths are identified and compiled into highly optimized
+                                machine code, which can be executed directly by thr computer hardware.</p>
+                            <h2 class="text-start fw-bold">Memory Management</h2>
+                            <p class="lead px-2 text-start">JavaScript engines also manage memory. Objects and data
+                                structures with longer lifetimes are stored in Heap, which is dynamically managed. A
+                                Garbage collecter automatically identifies and reclaims memory that is no longer being
+                                used by the program.</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="modal-body ">
-                    <p class="lead px-2 text-start" >
-                        JavaScript code is executed by a JavaScript engine, which is program designed to interpret and execute JavaScript code. These engines are found in web browsers and also in server side runtimes like Node.js.
-                    </p>
-                    <h2 class="text-start fw-bold">Parsing and AST Generation</h2>
-                    <p class="lead px-2 text-start" >
-                      The JavaScript engine first parses the code breaking it down into a structured representation called an  <strong> Abstract Syntax Tree (AST).</strong> This tree represents the grammatical strucure of the code.
-                    </p>
-                    <h2 class="text-start fw-bold">Interpretation and Bytecode Generation</h2>
-                    <p class="lead px-2 text-start">The AST is then interpreted and in many modren engines, bytecode is generated. Bytecode is a low-level representation of the code that is more efficient for the machine to process than the raw source code.</p>
-                    <h2 class="text-start fw-bold">Just-In-Time Compilation</h2>
-                    <p class="lead px-2 text-start">To optimize performance, JavaScript engines employ Just-In-Time Compilation. This process combines interpretation with Compilation. Frequently executed or hot code paths are identified and compiled into highly optimized machine code, which can be executed directly by thr computer hardware.</p>
-                    <h2 class="text-start fw-bold">Memory Management</h2>
-                    <p class="lead px-2 text-start">JavaScript engines also manage memory. Objects and data structures with longer lifetimes are stored in Heap, which is dynamically managed. A Garbage collecter automatically identifies and reclaims memory that is no longer being used by the program.</p>
-                </div>
-                
             </div>
-        </div>
-    </div>
 
 
 
-    <li>Variables</li>
-    <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
+            <li>Variables</li>
+            <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
 
 
-<div class="modal fade " id="datatypes">
-        <div class="modal-dialog    modal-dialog-scrollable rounded">
-            <div class="div modal-content text-center">
-                <div class="modal-header ">
-                    <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body ">
-                    <p class="lead text-start">JavaScript categorized data into two types: <strong> Primitive</strong> and <strong>Reference</strong></p>
-                    <h2 class="text-start fw-bold">Primitive Data Types</h2>
-                    <p class="lead px-2 text-start">These are immutable values, meaning their value cannot be changed after creation. There are seven priitive data types in JavaScript</p>
-                    <p class="lead px-2 text-start"><strong class="fw-bold">String:</strong> Represents textual data, enclosed in single quotes, double quotes or backticks.</p>
-                    <div class="syntax py-2 rounded text-start px-2">
-                        <pre class="">
+            <div class="modal fade " id="datatypes">
+                <div class="modal-dialog    modal-dialog-scrollable rounded">
+                    <div class="div modal-content text-center">
+                        <div class="modal-header ">
+                            <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <p class="lead text-start">JavaScript categorized data into two types: <strong>
+                                    Primitive</strong> and <strong>Reference</strong></p>
+                            <h2 class="text-start fw-bold">Primitive Data Types</h2>
+                            <p class="lead px-2 text-start">These are immutable values, meaning their value cannot be
+                                changed after creation. There are seven priitive data types in JavaScript</p>
+                            <p class="lead px-2 text-start"><strong class="fw-bold">String:</strong> Represents textual
+                                data, enclosed in single quotes, double quotes or backticks.</p>
+                            <div class="syntax py-2 rounded text-start px-2">
+                                <pre class="">
 let name='Alice';
 let greeting=`Hello, ${name}`
                         </pre>
-                    </div>
-<hr>
-                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Number:</strong> Represents both integer and floating-point numbers. Includes special values like Infinity and NaN.</p>
-                    <div class="syntax  rounded text-start px-2">
-                        <pre class="py-2">
+                            </div>
+                            <hr>
+                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Number:</strong> Represents
+                                both integer and floating-point numbers. Includes special values like Infinity and NaN.
+                            </p>
+                            <div class="syntax  rounded text-start px-2">
+                                <pre class="py-2">
 let age=30;
 let price=9.99
                         </pre>
-                    </div>
-<hr>
-                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Boolean:</strong>Represents logical entities, with values true or false</p>
-                    <div class="syntax  rounded text-start px-2">
-                        <pre class="py-2">
+                            </div>
+                            <hr>
+                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Boolean:</strong>Represents
+                                logical entities, with values true or false</p>
+                            <div class="syntax  rounded text-start px-2">
+                                <pre class="py-2">
 let isactive=true;
 let isloggedIn=false
                         </pre>
-                    </div>
-<hr>
-                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Undefined:</strong> Represents a variable that has been declared but not yet assigned a value.</p>
-                    <div class="syntax  rounded text-start px-2">
-                        <pre class="py-2">
+                            </div>
+                            <hr>
+                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Undefined:</strong> Represents
+                                a variable that has been declared but not yet assigned a value.</p>
+                            <div class="syntax  rounded text-start px-2">
+                                <pre class="py-2">
 let unassignedVariable; 
 // unassignedVariable is Undefined
                         </pre>
-                    </div>
-<hr>
-                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Null:</strong> Represents the intentational absense of any object value. It is a primitive value but <strong>typeof null</strong> rerurns object due to a historical quirk</p>
-                    <div class="syntax  rounded text-start px-2">
-                        <pre class="py-2">
+                            </div>
+                            <hr>
+                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Null:</strong> Represents the
+                                intentational absense of any object value. It is a primitive value but <strong>typeof
+                                    null</strong> rerurns object due to a historical quirk</p>
+                            <div class="syntax  rounded text-start px-2">
+                                <pre class="py-2">
 let emptyValue=null;
 let empty=null
                         </pre>
-                    </div>
-<hr>
-                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Bigint:</strong> Represents whole numbers larger than 2 <sup>53</sup> -1, which is the maximum safe integer for the Number type. Appended with an n.</p>
-                    <div class="syntax  rounded text-start px-2">
-                        <pre class="py-2">
+                            </div>
+                            <hr>
+                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Bigint:</strong> Represents
+                                whole numbers larger than 2 <sup>53</sup> -1, which is the maximum safe integer for the
+                                Number type. Appended with an n.</p>
+                            <div class="syntax  rounded text-start px-2">
+                                <pre class="py-2">
 let largeNumber=9007199254740991n
                         </pre>
-                    </div>
-<hr>
-                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Symbol:</strong> A unique and immutable primitive value, often used as obejct property key to avoid naming collision.</p>
-                    <div class="syntax  rounded text-start px-2">
-                        <pre class="py-2">
+                            </div>
+                            <hr>
+                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Symbol:</strong> A unique and
+                                immutable primitive value, often used as obejct property key to avoid naming collision.
+                            </p>
+                            <div class="syntax  rounded text-start px-2">
+                                <pre class="py-2">
 const id= Symbol('uniqueId')
                         </pre>
-                    </div>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <li>Functions</li>
-    <li>Loops</li>
-</ul>
-</div>
+            <li>Functions</li>
+            <li>Loops</li>
+        </ul>
+    </div>
 
 
     <div class="container">
@@ -213,7 +248,8 @@ const id= Symbol('uniqueId')
                     <p class="lead px-5 px-md-1">The language of the web — build interactive websites and powerful
                         applications.</p>
                     <div class="text-center py-3">
-                        <button class="btn btn-primary me-3" id="Showside" onclick="show()">Start Learning More....</button>
+                        <button class="btn btn-primary me-3" id="Showside" onclick="show()">Start Learning
+                            More....</button>
                     </div>
                 </div>
             </div>
@@ -373,14 +409,15 @@ for (let i = 0; i < 5; i++) {
 
 </body>
 <script>
-    const sidebar=document.querySelector('.sidebar');
-      function show(){
-        sidebar.style.display='block';
-      }
+    const sidebar = document.querySelector('.sidebar');
+    function show() {
+        sidebar.style.display = 'block';
+    }
 
-    function closeSide(){
-        sidebar.style.display='none';
+    function closeSide() {
+        sidebar.style.display = 'none';
     }
 
 </script>
+
 </html>

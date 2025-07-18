@@ -117,7 +117,14 @@
             border: none;
             outline: none;
         }
-
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        button :hover{
+            color: aliceblue;
+            font-weight: 500;
+        }
         @media (max-width:500px) {
             footer h5 {
                 text-align: left;
@@ -147,7 +154,7 @@
 
             <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
                 <ul class="navbar-nav fs-5 ms-3  ms-md-5">
-                    <li class="nav-item"><a href="/Home.html" class="nav-link text-white px-2">Home</a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link text-white px-2">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link text-white dropdown-toggle px-2" id="" data-bs-target="dropdown"
                             data-bs-toggle="dropdown">Languages</a>
@@ -178,8 +185,11 @@
         <div class="row bg-color py-5">
             <div class="col-md-12 ">
                 <div class="card card-shadow p-4 text-center">
-                    <h1 class="fw-bold">Python Syntax</h1>
-                    <p>Introduction to the syntax of the python programming Language</p>
+                    <h1 class="fw-bold">C++ Syntax</h1>
+                <p>Introduction to the syntax of the C++ programming Language</p>
+                    <div class="text-center">
+                    <button class="btn btn-primary  "><a href="">Start Learning More -></a></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,12 +203,14 @@
                     <h2 class="heading fw-bold">Basic Syntax</h2>
                 </div>
                 <div class="card-text mt-2 py-1">
-                    <p class="lead">Python uses indentation define code blocks and statements are typically written one per
-                        line.</p>
+                    <p class="lead">C++  functions for printing the message</p>
                     <div class="syntax py-2 px-3 rounded">
                         <pre>
-greet();
-print('Hello world')
+int main(){
+    //code
+    return 0;
+}
+cout << 'Hello World';
                         </pre>
                     </div>
                     </div>
@@ -211,13 +223,14 @@ print('Hello world')
                     </div>
                     <div class="card-text">
                         
-                        <p class="lead">Variables are dynamically typed and created when values assigned</p>
-                        <div class="syntax px-3 py-2 rounded">
+                        <p class="lead">In C++ there are different types of variables</p>
+                        <div class="syntax px-3 py-3 rounded">
                         <pre>
-message ='Hello python'
-x=2
-pl=5.14
-is_python_fun=True                         
+type variableName= value;
+int myNum=15;
+string myText='Hello';
+char myLetter='D';
+bool myBoolean= true;
                         </pre>
                         </div>
                     </div>
@@ -229,17 +242,18 @@ is_python_fun=True
         <div class="row  py-3">
             <div class="col-md-6">
                <div class="card card-shadow p-4">
-                <div class="card-title mt-2">
+                <div class="card-title ">
                     <h2 class="heading fw-bold">Data Types</h2>
                 </div>
                 <div class="card-text">
-                    <p class="lead">Python has several built in data types for different kinds of values</p>
+                    <p class="lead">JavaScript has several built in data types for different kinds of values</p>
                     <div class="syntax px-3 py-2 rounded">
                         <pre>
-name='Alice'
-numbers=[1,2,3,4]
-person={'name':'bob','age':25}
-is_python_fun=True
+int : //stores integers    
+double : // stores floating point numbers
+char : //stores single character
+string: //stores text 
+bool : //stores states: true or false  
                         </pre>
                     </div>
                 </div>
@@ -251,12 +265,13 @@ is_python_fun=True
                       <h2 class="heading fw-bold">Control Structures</h2>
                   </div>
                   <div class="card-text">
-                      <p class="lead">Python supports common control structures like if statements, for and while loops</p>
-                      <div class="syntax px-3 py-2">
+                      <p class="lead">JavaScript supports common control structures like if statements, for and while loops</p>
+                      <div class="syntax px-3 py-1">
                         <pre>
-if x >9;
-for i in range(5);
-while x>0;
+if ( condition ){//code};
+if( condition ){
+    //code
+}else{}
                         </pre>
 
                       </div>
