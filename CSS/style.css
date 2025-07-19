@@ -54,12 +54,18 @@ footer a{
 }
 footer h5{
     font-weight: bold;
-    font-family:  'Roboto';
+    font-family:  'Inter Tight';
+    font-weight: 500;
 }
 .img{
     width: 80%;
     height: 80%;
 }
+.img img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
 .fixed-column-height{
     height: 200px;
 }

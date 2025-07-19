@@ -1,33 +1,40 @@
-const imgDiv = document.querySelector('.img')
 
+let selectedLanguage=null;
 
-const Python = document.getElementById('python');
-const button = document.querySelectorAll('.button');
+  document.querySelectorAll(".list-unstyled li").forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault(); // prevent default anchor behavior
+      selectedLanguage = item.textContent.trim().toLowerCase();
+      showImage("overview"); // default view
+    });
+  });
 
-Python.addEventListener('click', () => {
-    const img = document.createElement('img');
-    img.className = 'img'
-    img.setAttribute('src', "/Images/overview.png")
-    imgDiv.appendChild(img)
+  // Listen to button clicks (Overview, Syntax, etc.)
+  document.querySelectorAll(".button .btn").forEach(button => {
+    button.addEventListener("click", function () {
+      const type = this.textContent.trim().toLowerCase();
+      showImage(type);
+    });
+  });
+
+  function showImage(type) {
+    if (!selectedLanguage) return;
+
+    const imageDiv = document.querySelector(".img");
+    const imagePath = `Images/${selectedLanguage}-${type}.png`;
+
+    imageDiv.innerHTML = `
+      <img src="${imagePath}" alt="${selectedLanguage}-${type}" class="img-fluid border rounded shadow">    
+    `;
+  }
+
+  function capitalize(text) {
+    return text.charAt(0).toUpperCase() + text.slice(1);
     
-    button.addEventListener('click', () => {
-        if (button.textContext == 'Syntax') {
-            const syntaxImg = document.createElement('img');
-            syntaxImg.className = 'img';
-            syntaxImg.setAttribute('src', '');
-            imgDiv.appendChild(syntaxImg)
-        }
-    })
-})
-
-const JavaScript = document.getElementById('javascript');
-
-JavaScript.addEventListener('click', () => {
-    
-    const img = document.createElement('img');
-    img.className = 'img';
-    img.setAttribute('src', "/Images/Javascript.png");
-    imgDiv.appendChild(img);
-})
-
-
+  }
+  
+  
+  window.addEventListener("DOMContentLoaded", function () {
+    selectedLanguage = "python";
+    showImage("overview");
+  });
