@@ -19,7 +19,8 @@
             color: black;
             font-weight: 400;
         }
-        .sidebar ul{
+
+        .sidebar ul {
             animation-duration: 0.5s;
         }
     </style>
@@ -70,44 +71,20 @@
         </nav>
     </div>
 
-    <div class="sidebar py-3 animate__animated  ">
-        <ul class="list-unstyled animate__animated  animate__fadeInLeft  lead ">
+    <div class="sidebar py-3   ">
+        <ul class="list-unstyled animate-animated animate__fadeInLeft  lead ">
             <li class="text-end">
                 <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
             </li>
             <li data-bs-toggle="modal" data-bs-target="#introduction">Introduction</li>
 
-            <div class="modal fade" id="introduction">
-                <div class="modal-dialog   modal-dialog-scrollable rounded">
-                    <div class="div modal-content text-center">
-                        <div class="modal-header ">
-                            <h1 class="modal-title text-center  card-title heading">JavaScript Introduction</h1>
-                            <button class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body ">
-                            <p class="lead px-2 text-start">JavaScript, often abbreviated as JS, is a programming
-                                language and core technology of the world wide web, alongside HTML and CSS.99% of
-                                websites use JavaScript on the client side for webpage behavior. Web browsers have a
-                                dedicated JavaScript Engine that execute the client code.
-                            </p>
-                            <h2 class="text-start fw-bold">History</h2>
-                            <p class="lead px-2 text-start">
-                                JavaScript was invented by <strong>Brendan Eich</strong> in 1995. It was developed for
-                                Netscape 2 and became the ECMA-262 standard in 1997. After Netscape handed JavaScript
-                                over to ECMA, the Mozilla foundation continued to developed JavaScript for Firefox
-                                browsers.
-                            </p>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
 
 
             <li data-bs-target="#working" data-bs-toggle="modal">Working</li>
 
             <div class="modal fade " id="working">
-                <div class="modal-dialog  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
+                <div class="modal-dialog modal-lg  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
                     <div class="div modal-content text-center">
                         <div class="modal-header ">
                             <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
@@ -147,12 +124,14 @@
 
 
 
-            <li>Variables</li>
+            <li data-bs-target="#variables" data-bs-toggle="modal">Variables</li>
+
+
             <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
 
 
             <div class="modal fade " id="datatypes">
-                <div class="modal-dialog    modal-dialog-scrollable rounded">
+                <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
                     <div class="div modal-content text-center">
                         <div class="modal-header ">
                             <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
@@ -234,7 +213,7 @@ const id= Symbol('uniqueId')
                 </div>
             </div>
 
-            <li>Functions</li>
+            <li data-bs-target="#functions" data-bs-toggle="modal">Functions</li>
             <li>Loops</li>
         </ul>
     </div>
@@ -286,6 +265,157 @@ for (let i = 0; i < 5; i++) {
         </div>
     </div>
 
+    <div class="modal fade" id="introduction">
+        <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center  card-title heading">JavaScript Introduction</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">JavaScript, often abbreviated as JS, is a programming
+                        language and core technology of the world wide web, alongside HTML and CSS.99% of
+                        websites use JavaScript on the client side for webpage behavior. Web browsers have a
+                        dedicated JavaScript Engine that execute the client code.
+                    </p>
+                    <h2 class="text-start fw-bold">History</h2>
+                    <p class="lead px-2 text-start">
+                        JavaScript was invented by <strong>Brendan Eich</strong> in 1995. It was developed for
+                        Netscape 2 and became the ECMA-262 standard in 1997. After Netscape handed JavaScript
+                        over to ECMA, the Mozilla foundation continued to developed JavaScript for Firefox
+                        browsers.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade " id="variables">
+        <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center  card-title heading">Variables</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">In JavaScript, variables are named containers used to store data
+                        values. They are essential for holding information that can be accessed and manipulated within a
+                        program. JavaScript offers three primary keywords for declaring variables <strong>var, let, and
+                            const.</strong>
+
+                    </p>
+                    <h2 class="text-start fw-bold">Var</h2>
+                    <p class="lead px-2 text-start"> This is the older way of declaring variables in JavaScript.
+                        var declarations are function-scoped or globally-scoped. This means a variable declared with var
+                        inside a function is accessible anywhere within that function, and if declared outside any
+                        function, it's accessible globally.
+                        Variables declared with var can be re-declared and re-assigned within the same scope without
+                        error.
+                    </p>
+                    <h2 class="text-start fw-bold">Let</h2>
+                    <p class="lead px-2 text-start"> This is the older way of declaring variables in JavaScript.
+                        Introduced in ES6 (ECMAScript 2015), let is the modern and recommended way to declare variables.
+                        let declarations are block-scoped. This means a variable declared with let is only accessible
+                        within the block (e.g., inside an if statement, for loop, or any curly braces {}) where it was
+                        defined.
+                        Variables declared with let can be re-assigned but cannot be re-declared within the same scope
+                    </p>
+                    <h2 class="text-start fw-bold">Const</h2>
+                    <p class="lead px-2 text-start">
+                        Also introduced in ES6, const is used to declare variables whose values are intended to remain
+                        constant (immutable) after initial assignment.
+                        Like let, const declarations are block-scoped.
+                        Variables declared with const must be initialized at the time of declaration and cannot be
+                        re-assigned after their initial value is set. However, for const variables holding objects or
+                        arrays, the contents of the object or array can still be modified, but the variable itself
+                        cannot be pointed to a different object or array.
+                    </p>
+                    <h2 class="text-start fw-bold">Example</h2>
+                    <div class="syntax text-start py-3 px-2 rounded">
+                        <pre>
+// Using var (function-scoped/global-scoped)
+var globalVar = "I'm global";
+function exampleVar() {
+  var functionVar = "I'm function-scoped";
+  console.log(globalVar); // Accessible
+  console.log(functionVar); // Accessible
+}
+exampleVar();
+// console.log(functionVar); // Error: functionVar is not defined outside the function
+
+// Using let (block-scoped)
+let blockScope = "Outside block";
+if (true) {
+  let blockScope = "Inside block"; // This is a new variable, not redeclaration
+  console.log(blockScope); // Outputs: Inside block
+}
+console.log(blockScope); // Outputs: Outside block
+
+// Using const (block-scoped and immutable value)
+const PI = 3.14159;
+// PI = 3.14; // This would cause an error: Assignment to constant variable.
+
+const myArray = [1, 2, 3];
+myArray.push(4); // Allowed: Modifying array content
+// myArray = [5, 6]; // Error: Assignment to constant variable.
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="functions">
+        <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center  card-title heading">JavaScript Functions</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">JavaScript functions are fundamental blocks of code designed to perform specific tasks. They allow for organization, reusability, and modularization of code. Functions can take inputs (parameters), perform actions, and return outputs. 
+
+                    </p>
+                    <h2 class="fw-bold text-start">Function Expression.</h2>
+<p class="lead px text-start">A function defined as part of an expression, often assigned to a variable. It can be named or anonymous.
+</p>
+<div class="syntax px-2 py-2 text-start rounded">
+    <pre>
+const functionName = function(parameter1, parameter2)
+ {
+// code to be executed
+return result;    };
+    </pre>
+</div>
+<h2 class="text-start fw-bold mt-2">Arrow Functions (ES6+).</h2>
+<p class="lead px-2 text-start">A concise syntax for writing function expressions, particularly useful for shorter functions and when dealing with this context.
+</p>
+<div class="syntax text-start py-2 px-2 rounded">
+    <pre>
+const functionName = (parameter1, parameter2) => {
+// code to be executed
+return result;
+};
+
+// For single-expression functions, the return keyword and curly braces can be omitted
+const add = (a, b) => a + b;
+    </pre>
+</div>
+<h2 class="text-start fw-bold mt-2">Invoking Functions:</h2>
+<p class="lead px-2 text-start">
+Functions are executed when they are "invoked" or "called." This can happen: 
+When an event occurs (e.g., a user clicks a button).
+When explicitly called from other JavaScript code</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-12 mb-4">
@@ -306,6 +436,8 @@ for (let i = 0; i < 5; i++) {
             </div>
         </div>
     </div>
+    
+
 
 
     <div class="container">

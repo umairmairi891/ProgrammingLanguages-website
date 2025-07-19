@@ -49,11 +49,12 @@ footer{
 footer a{
     text-decoration: none;
     color: white;
-    font-family: 'Raleway';
+    font-family: 'Inter';
     font-weight: 300;
 }
 footer h5{
     font-weight: bold;
+    font-family:  'Roboto';
 }
 .img{
     width: 80%;
