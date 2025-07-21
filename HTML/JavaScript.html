@@ -77,199 +77,22 @@
                 <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
             </li>
             <li data-bs-toggle="modal" data-bs-target="#introduction">Introduction</li>
-
-
-
-
             <li data-bs-target="#working" data-bs-toggle="modal">Working</li>
-
-            <div class="modal fade " id="working">
-                <div class="modal-dialog modal-lg  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
-                    <div class="div modal-content text-center">
-                        <div class="modal-header ">
-                            <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
-                            <button class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body ">
-                            <p class="lead px-2 text-start">
-                                JavaScript code is executed by a JavaScript engine, which is program designed to
-                                interpret and execute JavaScript code. These engines are found in web browsers and also
-                                in server side runtimes like Node.js.
-                            </p>
-                            <h2 class="text-start fw-bold">Parsing and AST Generation</h2>
-                            <p class="lead px-2 text-start">
-                                The JavaScript engine first parses the code breaking it down into a structured
-                                representation called an <strong> Abstract Syntax Tree (AST).</strong> This tree
-                                represents the grammatical strucure of the code.
-                            </p>
-                            <h2 class="text-start fw-bold">Interpretation and Bytecode Generation</h2>
-                            <p class="lead px-2 text-start">The AST is then interpreted and in many modren engines,
-                                bytecode is generated. Bytecode is a low-level representation of the code that is more
-                                efficient for the machine to process than the raw source code.</p>
-                            <h2 class="text-start fw-bold">Just-In-Time Compilation</h2>
-                            <p class="lead px-2 text-start">To optimize performance, JavaScript engines employ
-                                Just-In-Time Compilation. This process combines interpretation with Compilation.
-                                Frequently executed or hot code paths are identified and compiled into highly optimized
-                                machine code, which can be executed directly by thr computer hardware.</p>
-                            <h2 class="text-start fw-bold">Memory Management</h2>
-                            <p class="lead px-2 text-start">JavaScript engines also manage memory. Objects and data
-                                structures with longer lifetimes are stored in Heap, which is dynamically managed. A
-                                Garbage collecter automatically identifies and reclaims memory that is no longer being
-                                used by the program.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
             <li data-bs-target="#variables" data-bs-toggle="modal">Variables</li>
-
-
             <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
-
-
-            <div class="modal fade " id="datatypes">
-                <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
-                    <div class="div modal-content text-center">
-                        <div class="modal-header ">
-                            <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
-                            <button class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body ">
-                            <p class="lead text-start">JavaScript categorized data into two types: <strong>
-                                    Primitive</strong> and <strong>Reference</strong></p>
-                            <h2 class="text-start fw-bold">Primitive Data Types</h2>
-                            <p class="lead px-2 text-start">These are immutable values, meaning their value cannot be
-                                changed after creation. There are seven priitive data types in JavaScript</p>
-                            <p class="lead px-2 text-start"><strong class="fw-bold">String:</strong> Represents textual
-                                data, enclosed in single quotes, double quotes or backticks.</p>
-                            <div class="syntax py-2 rounded text-start px-2">
-                                <pre class="">
-let name='Alice';
-let greeting=`Hello, ${name}`
-                        </pre>
-                            </div>
-                            <hr>
-                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Number:</strong> Represents
-                                both integer and floating-point numbers. Includes special values like Infinity and NaN.
-                            </p>
-                            <div class="syntax  rounded text-start px-2">
-                                <pre class="py-2">
-let age=30;
-let price=9.99
-                        </pre>
-                            </div>
-                            <hr>
-                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Boolean:</strong>Represents
-                                logical entities, with values true or false</p>
-                            <div class="syntax  rounded text-start px-2">
-                                <pre class="py-2">
-let isactive=true;
-let isloggedIn=false
-                        </pre>
-                            </div>
-                            <hr>
-                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Undefined:</strong> Represents
-                                a variable that has been declared but not yet assigned a value.</p>
-                            <div class="syntax  rounded text-start px-2">
-                                <pre class="py-2">
-let unassignedVariable; 
-// unassignedVariable is Undefined
-                        </pre>
-                            </div>
-                            <hr>
-                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Null:</strong> Represents the
-                                intentational absense of any object value. It is a primitive value but <strong>typeof
-                                    null</strong> rerurns object due to a historical quirk</p>
-                            <div class="syntax  rounded text-start px-2">
-                                <pre class="py-2">
-let emptyValue=null;
-let empty=null
-                        </pre>
-                            </div>
-                            <hr>
-                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Bigint:</strong> Represents
-                                whole numbers larger than 2 <sup>53</sup> -1, which is the maximum safe integer for the
-                                Number type. Appended with an n.</p>
-                            <div class="syntax  rounded text-start px-2">
-                                <pre class="py-2">
-let largeNumber=9007199254740991n
-                        </pre>
-                            </div>
-                            <hr>
-                            <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Symbol:</strong> A unique and
-                                immutable primitive value, often used as obejct property key to avoid naming collision.
-                            </p>
-                            <div class="syntax  rounded text-start px-2">
-                                <pre class="py-2">
-const id= Symbol('uniqueId')
-                        </pre>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <li data-bs-target="#functions" data-bs-toggle="modal">Functions</li>
-            <li>Loops</li>
+            <li data-bs-target="#loops" data-bs-toggle="modal">Loops</li>
         </ul>
     </div>
 
+    <!-- Bootstrap Modals -->
 
-    <div class="container">
-        <div class="row py-5 ">
-            <div class="col-md-12  ">
-                <div class="card card-shadow card-bg text-center py-2">
-                    <h1 class="fw-bold mt-2">JavaScript</h1>
-                    <p class="lead px-5 px-md-1">The language of the web — build interactive websites and powerful
-                        applications.</p>
-                    <div class="text-center py-3">
-                        <button class="btn btn-primary me-3" id="Showside" onclick="show()">Start Learning
-                            More....</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <div class="card card-shadow p-4 ">
-                    <div class="card-title">
-                        <h2 class="heading fw-bold">🔰 Syntax Overview</h2>
-                    </div>
-                    <div class="card-text">
-                        <div class="syntax rounded w-100">
-                            <pre class="px-5 py-2">
-// Variable Declaration
-let name = "JavaScript";
-
-// Function
-function greet(user) {
-  return "Hello, " + user;
-}
-
-// Loop
-for (let i = 0; i < 5; i++) {
-  console.log(i);
-}
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Intoduction modal  -->
     <div class="modal fade" id="introduction">
         <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
                 <div class="modal-header ">
-                    <h1 class="modal-title text-center  card-title heading">JavaScript Introduction</h1>
+                    <h1 class="modal-title text-start  card-title heading">JavaScript Introduction</h1>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
@@ -290,8 +113,46 @@ for (let i = 0; i < 5; i++) {
             </div>
         </div>
     </div>
+    <!-- Working modal -->
+    <div class="modal fade " id="working">
+        <div class="modal-dialog modal-lg  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
+            <div class=" modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">
+                        JavaScript code is executed by a JavaScript engine, which is program designed to
+                        interpret and execute JavaScript code. These engines are found in web browsers and also
+                        in server side runtimes like Node.js.
+                    </p>
+                    <h2 class="text-start fw-bold">Parsing and AST Generation</h2>
+                    <p class="lead px-2 text-start">
+                        The JavaScript engine first parses the code breaking it down into a structured
+                        representation called an <strong> Abstract Syntax Tree (AST).</strong> This tree
+                        represents the grammatical strucure of the code.
+                    </p>
+                    <h2 class="text-start fw-bold">Interpretation and Bytecode Generation</h2>
+                    <p class="lead px-2 text-start">The AST is then interpreted and in many modren engines,
+                        bytecode is generated. Bytecode is a low-level representation of the code that is more
+                        efficient for the machine to process than the raw source code.</p>
+                    <h2 class="text-start fw-bold">Just-In-Time Compilation</h2>
+                    <p class="lead px-2 text-start">To optimize performance, JavaScript engines employ
+                        Just-In-Time Compilation. This process combines interpretation with Compilation.
+                        Frequently executed or hot code paths are identified and compiled into highly optimized
+                        machine code, which can be executed directly by thr computer hardware.</p>
+                    <h2 class="text-start fw-bold">Memory Management</h2>
+                    <p class="lead px-2 text-start">JavaScript engines also manage memory. Objects and data
+                        structures with longer lifetimes are stored in Heap, which is dynamically managed. A
+                        Garbage collecter automatically identifies and reclaims memory that is no longer being
+                        used by the program.</p>
+                </div>
 
-
+            </div>
+        </div>
+    </div>
+    <!-- Variables modal  -->
     <div class="modal fade " id="variables">
         <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
@@ -367,8 +228,91 @@ myArray.push(4); // Allowed: Modifying array content
             </div>
         </div>
     </div>
+    <!-- Data Type modal  -->
+    <div class="modal fade " id="datatypes">
+        <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead text-start">JavaScript categorized data into two types: <strong>
+                            Primitive</strong> and <strong>Reference</strong></p>
+                    <h2 class="text-start fw-bold">Primitive Data Types</h2>
+                    <p class="lead px-2 text-start">These are immutable values, meaning their value cannot be
+                        changed after creation. There are seven priitive data types in JavaScript</p>
+                    <p class="lead px-2 text-start"><strong class="fw-bold">String:</strong> Represents textual
+                        data, enclosed in single quotes, double quotes or backticks.</p>
+                    <div class="syntax py-2 rounded text-start px-2">
+                        <pre class="">
+let name='Alice';
+let greeting=`Hello, ${name}`
+                        </pre>
+                    </div>
+                    <hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Number:</strong> Represents
+                        both integer and floating-point numbers. Includes special values like Infinity and NaN.
+                    </p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let age=30;
+let price=9.99
+                        </pre>
+                    </div>
+                    <hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Boolean:</strong>Represents
+                        logical entities, with values true or false</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let isactive=true;
+let isloggedIn=false
+                        </pre>
+                    </div>
+                    <hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Undefined:</strong> Represents
+                        a variable that has been declared but not yet assigned a value.</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let unassignedVariable; 
+// unassignedVariable is Undefined
+                        </pre>
+                    </div>
+                    <hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Null:</strong> Represents the
+                        intentational absense of any object value. It is a primitive value but <strong>typeof
+                            null</strong> rerurns object due to a historical quirk</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let emptyValue=null;
+let empty=null
+                        </pre>
+                    </div>
+                    <hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Bigint:</strong> Represents
+                        whole numbers larger than 2 <sup>53</sup> -1, which is the maximum safe integer for the
+                        Number type. Appended with an n.</p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+let largeNumber=9007199254740991n
+                        </pre>
+                    </div>
+                    <hr>
+                    <p class="lead px-2 text-start mt-2"><strong class="fw-bold">Symbol:</strong> A unique and
+                        immutable primitive value, often used as obejct property key to avoid naming collision.
+                    </p>
+                    <div class="syntax  rounded text-start px-2">
+                        <pre class="py-2">
+const id= Symbol('uniqueId')
+                        </pre>
+                    </div>
 
-<div class="modal fade" id="functions">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Functions modal  -->
+    <div class="modal fade" id="functions">
         <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
                 <div class="modal-header ">
@@ -376,25 +320,30 @@ myArray.push(4); // Allowed: Modifying array content
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
-                    <p class="lead px-2 text-start">JavaScript functions are fundamental blocks of code designed to perform specific tasks. They allow for organization, reusability, and modularization of code. Functions can take inputs (parameters), perform actions, and return outputs. 
+                    <p class="lead px-2 text-start">JavaScript functions are fundamental blocks of code designed to
+                        perform specific tasks. They allow for organization, reusability, and modularization of code.
+                        Functions can take inputs (parameters), perform actions, and return outputs.
 
                     </p>
                     <h2 class="fw-bold text-start">Function Expression.</h2>
-<p class="lead px text-start">A function defined as part of an expression, often assigned to a variable. It can be named or anonymous.
-</p>
-<div class="syntax px-2 py-2 text-start rounded">
-    <pre>
+                    <p class="lead px text-start">A function defined as part of an expression, often assigned to a
+                        variable. It can be named or anonymous.
+                    </p>
+                    <div class="syntax px-2 py-2 text-start rounded">
+                        <pre>
 const functionName = function(parameter1, parameter2)
  {
 // code to be executed
 return result;    };
     </pre>
-</div>
-<h2 class="text-start fw-bold mt-2">Arrow Functions (ES6+).</h2>
-<p class="lead px-2 text-start">A concise syntax for writing function expressions, particularly useful for shorter functions and when dealing with this context.
-</p>
-<div class="syntax text-start py-2 px-2 rounded">
-    <pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">Arrow Functions (ES6+).</h2>
+                    <p class="lead px-2 text-start">A concise syntax for writing function expressions, particularly
+                        useful for shorter functions and when dealing with this context.
+                    </p>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
 const functionName = (parameter1, parameter2) => {
 // code to be executed
 return result;
@@ -403,17 +352,153 @@ return result;
 // For single-expression functions, the return keyword and curly braces can be omitted
 const add = (a, b) => a + b;
     </pre>
-</div>
-<h2 class="text-start fw-bold mt-2">Invoking Functions:</h2>
-<p class="lead px-2 text-start">
-Functions are executed when they are "invoked" or "called." This can happen: 
-When an event occurs (e.g., a user clicks a button).
-When explicitly called from other JavaScript code</p>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">Invoking Functions:</h2>
+                    <p class="lead px-2 text-start">
+                        Functions are executed when they are "invoked" or "called." This can happen:
+                        When an event occurs (e.g., a user clicks a button).
+                        When explicitly called from other JavaScript code</p>
                 </div>
 
             </div>
         </div>
     </div>
+    <!-- Loops modal  -->
+    <div class="modal fade" id="loops">
+        <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-center  card-title heading">JavaScript Loops</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-1 text-start">Loops in JavaScript are control flow statements used to repeatedly
+                        execute a block of code as long as a specified condition remains true. They are essential for
+                        automating repetative tasks and iterating over collections of data.
+                    </p>
+                    <h2 class="fw-bold text-start">for loop</h2>
+                    <p class="lead px text-start">Used for iterating a specific number of times or iterating over
+                        elements of an array.
+                    </p>
+                    <div class="syntax px-2 py-2 text-start rounded">
+                        <pre>
+for (let i=0; i<=5 ;i++){
+    console.log(i)  //prints 0,1,2,3,4,5
+}
+    </pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">while loop</h2>
+                    <p class="lead px-2 text-start">Executes a block of code as long as a condition remains true. The
+                        condition is checked before each iteration.
+                    </p>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
+let i=0;
+while(i<=5){
+    console.log(i) //prints 0,1,2,3,4,5
+    i++
+}
+    </pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">do.. whole loop</h2>
+                    <p class="lead px-2 text-start">Similar to while loop but the code block is executed before the
+                        condition is checked. The loop then continues as long as the condition is ture.</p>
+                        <div class="syntax text-start py-2 px-2 rounded">
+                            <pre>
+let i=0;
+  do{
+       console.log(i) //prints 0,1,2,3,4,5
+        i++
+    } while(i<=5)
+            </pre>
+                        </div>
+                        <hr>
+                    <h2 class="text-start fw-bold mt-2">for.. of loop</h2>
+                    <p class="lead px-2 text-start">Used to iterate over iteratable objects like (array, String or Maps) and access the values of each element</p>
+                        <div class="syntax text-start py-2 px-2 rounded">
+                            <pre>
+const colors=['red','green','yellow']
+  for(const color of colors){
+    console.log(color)  //prints  red, green , yellow
+  }
+            </pre>
+                        </div>
+                        <hr>
+                    <h2 class="text-start fw-bold mt-2">for..in loop</h2>
+                    <p class="lead px-2 text-start">Used to iterate over the enumerable properties of an object. It iterates over the keys of an object</p>
+                        <div class="syntax text-start py-2 px-2 rounded">
+                            <pre>
+const user={
+    name:'JavaScript',
+    email:'javascript@gmail.com',
+    age:20
+}
+for(const key in user){
+    console.log(`${key}:${person[key]}`)
+      //prints 'name:JavaScript', 'email'javascript@gmail.com', 'age:20'
+}
+            </pre>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row py-5 ">
+            <div class="col-md-12  ">
+                <div class="card card-shadow card-bg text-center py-2">
+                    <h1 class="fw-bold mt-2">JavaScript</h1>
+                    <p class="lead px-5 px-md-1">The language of the web — build interactive websites and powerful
+                        applications.</p>
+                    <div class="text-center py-3">
+                        <button class="btn btn-primary me-3" id="Showside" onclick="show()">Start Learning
+                            More....</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4 ">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">🔰 Syntax Overview</h2>
+                    </div>
+                    <div class="card-text">
+                        <div class="syntax rounded w-100">
+                            <pre class="px-5 py-2">
+// Variable Declaration
+let name = "JavaScript";
+
+// Function
+function greet(user) {
+  return "Hello, " + user;
+}
+
+// Loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <div class="container">
@@ -436,7 +521,7 @@ When explicitly called from other JavaScript code</p>
             </div>
         </div>
     </div>
-    
+
 
 
 

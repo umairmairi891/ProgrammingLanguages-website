@@ -97,7 +97,7 @@ h1,
             position: relative;
             
             width: 20%;
-            background-color:  #E8EAF6;
+            background-color:  #2D3E40;
             height: 100vh;
             float:left;
             display: none;
@@ -109,6 +109,7 @@ h1,
             cursor: pointer;
             background-color:teal;
             padding: 10px;
+            color:whitesmoke;
             border-radius: 10px;
             font-weight: 500;
             font-family:  Calibri, 'Trebuchet MS', sans-serif;
