@@ -82,6 +82,11 @@
             <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
             <li data-bs-target="#functions" data-bs-toggle="modal">Functions</li>
             <li data-bs-target="#loops" data-bs-toggle="modal">Loops</li>
+            <li data-bs-target="#objects" data-bs-toggle="modal">Objects</li>
+            <li data-bs-target="#classes" data-bs-toggle="modal">Classes</li>
+            <li data-bs-target="#async" data-bs-toggle="modal">Async</li>
+            <li data-bs-target="#dom" data-bs-toggle="modal">DOM</li>
+
         </ul>
     </div>
 
@@ -118,7 +123,7 @@
         <div class="modal-dialog modal-lg  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
             <div class=" modal-content text-center">
                 <div class="modal-header ">
-                    <h1 class="modal-title text-center fw-bold heading">JavaScript Working</h1>
+                    <h1 class="modal-title text-start fw-bold card-title heading">JavaScript Working</h1>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
@@ -157,7 +162,7 @@
         <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
                 <div class="modal-header ">
-                    <h1 class="modal-title text-center  card-title heading">Variables</h1>
+                    <h1 class="modal-title text-start  card-title heading">Variables</h1>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
@@ -233,7 +238,7 @@ myArray.push(4); // Allowed: Modifying array content
         <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
                 <div class="modal-header ">
-                    <h1 class="modal-title text-center fw-bold heading">JavaScript Data Types</h1>
+                    <h1 class="modal-title text-start fw-bold heading">JavaScript Data Types</h1>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
@@ -316,7 +321,7 @@ const id= Symbol('uniqueId')
         <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
                 <div class="modal-header ">
-                    <h1 class="modal-title text-center  card-title heading">JavaScript Functions</h1>
+                    <h1 class="modal-title text-start  card-title heading">JavaScript Functions</h1>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
@@ -369,7 +374,7 @@ const add = (a, b) => a + b;
         <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
             <div class="div modal-content text-center">
                 <div class="modal-header ">
-                    <h1 class="modal-title text-center  card-title heading">JavaScript Loops</h1>
+                    <h1 class="modal-title text-start  card-title heading">JavaScript Loops</h1>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body ">
@@ -446,6 +451,117 @@ for(const key in user){
             </div>
         </div>
     </div>
+ 
+    <!-- Objects modal  -->
+     <div class="modal fade" id="objects">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title heading text-start card-title fw-bold">JavaScript Objects</h1>
+            <button class="btn-close " data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities. Objects are essential collections of key value pairs, where each key is a string that uniquely identifies a value.</p>
+              <hr>
+              <h2 class="fw-bold text-start">Key-Value Pairs</h2>
+              <p class="lead px-2">The core of an object is its properties, which are like variables contained within object. Each property consists of a key and its associated value.</p>
+              <div class="syntax px-2 py-2 rounded">
+                <pre>
+  const person={
+    firstName:'John',
+    seconfName:'Doe',
+    age:30
+  };
+                </pre>
+              </div>
+              <hr>
+
+              <h2 class="fw-bold text-start">Methods</h2>
+              <p class="lead px-2">Objects can also contain functions as a properties. These functions are called methods and define actions that the object can perform</p>
+              <div class="syntax px-2 py-2 rounded">
+                <pre>
+  const person={
+    firstName:'John',
+    seconfName:'Doe',
+    fullName: function(){   // fullName is a method
+        return this.firstName + "" + this.lastName;
+    }
+  };
+  console.log(person.fullName) // outout John Doe
+                </pre>
+              </div>
+              <hr>
+
+              <h2 class="fw-bold text-start">Creation</h2>
+              <p class="lead px-2">Object can be created using : <strong>Object Literal Syntax :</strong> The most common and concise way using curly braces{} 
+              </p>
+              <div class="syntax px-2 py-2 rounded">
+                <pre>
+  const car ={
+    make:"Toyota",
+    model:'Camry'
+}
+                </pre>
+              </div>
+              <p class="lead px-2 mt-2">Object Constructur: Using the new Object () constructor</p>
+              <div class="syntax px-2  py-2 rounded">
+                <pre>
+const anotherCar=new Object();
+anotherCar.make='Honda';
+anotherCar.model='Civic';
+                </pre>
+              </div>
+            </div>
+        </div>
+      </div>
+     </div>
+
+
+     <!-- Classes modal  -->
+     <div class="modal fade" id="classes">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title heading text-start fw-bold">JavaScript Objects</h1>
+            <button class="btn-close " data-bs-dismiss="modal"></button>
+          </div>
+        </div>
+          <div class="modal-body">
+            <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities</p>
+          </div>
+      </div>
+     </div>
+
+   <!-- Async modal  -->
+     <div class="modal fade" id="async">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title heading text-start fw-bold">JavaScript Objects</h1>
+            <button class="btn-close " data-bs-dismiss="modal"></button>
+          </div>
+        </div>
+          <div class="modal-body">
+            <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities</p>
+          </div>
+      </div>
+     </div>
+     <!-- DOM modal -->
+     <div class="modal fade" id="dom">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title heading text-start fw-bold">JavaScript Objects</h1>
+            <button class="btn-close " data-bs-dismiss="modal"></button>
+          </div>
+        </div>
+          <div class="modal-body">
+            <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities</p>
+          </div>
+      </div>
+     </div>
+
+
 
 
 
