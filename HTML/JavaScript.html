@@ -411,31 +411,33 @@ while(i<=5){
                     <h2 class="text-start fw-bold mt-2">do.. whole loop</h2>
                     <p class="lead px-2 text-start">Similar to while loop but the code block is executed before the
                         condition is checked. The loop then continues as long as the condition is ture.</p>
-                        <div class="syntax text-start py-2 px-2 rounded">
-                            <pre>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
 let i=0;
   do{
        console.log(i) //prints 0,1,2,3,4,5
         i++
     } while(i<=5)
             </pre>
-                        </div>
-                        <hr>
+                    </div>
+                    <hr>
                     <h2 class="text-start fw-bold mt-2">for.. of loop</h2>
-                    <p class="lead px-2 text-start">Used to iterate over iteratable objects like (array, String or Maps) and access the values of each element</p>
-                        <div class="syntax text-start py-2 px-2 rounded">
-                            <pre>
+                    <p class="lead px-2 text-start">Used to iterate over iteratable objects like (array, String or Maps)
+                        and access the values of each element</p>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
 const colors=['red','green','yellow']
   for(const color of colors){
     console.log(color)  //prints  red, green , yellow
   }
             </pre>
-                        </div>
-                        <hr>
+                    </div>
+                    <hr>
                     <h2 class="text-start fw-bold mt-2">for..in loop</h2>
-                    <p class="lead px-2 text-start">Used to iterate over the enumerable properties of an object. It iterates over the keys of an object</p>
-                        <div class="syntax text-start py-2 px-2 rounded">
-                            <pre>
+                    <p class="lead px-2 text-start">Used to iterate over the enumerable properties of an object. It
+                        iterates over the keys of an object</p>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
 const user={
     name:'JavaScript',
     email:'javascript@gmail.com',
@@ -446,40 +448,44 @@ for(const key in user){
       //prints 'name:JavaScript', 'email'javascript@gmail.com', 'age:20'
 }
             </pre>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
- 
+
     <!-- Objects modal  -->
-     <div class="modal fade" id="objects">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title heading text-start card-title fw-bold">JavaScript Objects</h1>
-            <button class="btn-close " data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-              <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities. Objects are essential collections of key value pairs, where each key is a string that uniquely identifies a value.</p>
-              <hr>
-              <h2 class="fw-bold text-start">Key-Value Pairs</h2>
-              <p class="lead px-2">The core of an object is its properties, which are like variables contained within object. Each property consists of a key and its associated value.</p>
-              <div class="syntax px-2 py-2 rounded">
-                <pre>
+    <div class="modal fade" id="objects">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading text-start card-title fw-bold">JavaScript Objects</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections
+                        of data and more complex entities. Objects are essential collections of key value pairs, where
+                        each key is a string that uniquely identifies a value.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Key-Value Pairs</h2>
+                    <p class="lead px-2">The core of an object is its properties, which are like variables contained
+                        within object. Each property consists of a key and its associated value.</p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
   const person={
     firstName:'John',
     seconfName:'Doe',
     age:30
   };
                 </pre>
-              </div>
-              <hr>
+                    </div>
+                    <hr>
 
-              <h2 class="fw-bold text-start">Methods</h2>
-              <p class="lead px-2">Objects can also contain functions as a properties. These functions are called methods and define actions that the object can perform</p>
-              <div class="syntax px-2 py-2 rounded">
-                <pre>
+                    <h2 class="fw-bold text-start">Methods</h2>
+                    <p class="lead px-2">Objects can also contain functions as a properties. These functions are called
+                        methods and define actions that the object can perform</p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
   const person={
     firstName:'John',
     seconfName:'Doe',
@@ -489,77 +495,232 @@ for(const key in user){
   };
   console.log(person.fullName) // outout John Doe
                 </pre>
-              </div>
-              <hr>
+                    </div>
+                    <hr>
 
-              <h2 class="fw-bold text-start">Creation</h2>
-              <p class="lead px-2">Object can be created using : <strong>Object Literal Syntax :</strong> The most common and concise way using curly braces{} 
-              </p>
-              <div class="syntax px-2 py-2 rounded">
-                <pre>
+                    <h2 class="fw-bold text-start">Creation</h2>
+                    <p class="lead px-2">Object can be created using : <strong>Object Literal Syntax :</strong> The most
+                        common and concise way using curly braces{}
+                    </p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
   const car ={
     make:"Toyota",
     model:'Camry'
 }
                 </pre>
-              </div>
-              <p class="lead px-2 mt-2">Object Constructur: Using the new Object () constructor</p>
-              <div class="syntax px-2  py-2 rounded">
-                <pre>
+                    </div>
+                    <p class="lead px-2 mt-2">Object Constructur: Using the new Object () constructor</p>
+                    <div class="syntax px-2  py-2 rounded">
+                        <pre>
 const anotherCar=new Object();
 anotherCar.make='Honda';
 anotherCar.model='Civic';
                 </pre>
-              </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-     </div>
+    </div>
 
 
-     <!-- Classes modal  -->
-     <div class="modal fade" id="classes">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title heading text-start fw-bold">JavaScript Objects</h1>
-            <button class="btn-close " data-bs-dismiss="modal"></button>
-          </div>
-        </div>
-          <div class="modal-body">
-            <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities</p>
-          </div>
-      </div>
-     </div>
+    <!-- Classes modal  -->
+    <div class="modal fade" id="classes">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading card-title text-start fw-bold">JavaScript Objects</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">
+                        JavaScript classes, introduced in ES6 (ECMAScript 2015), provide a more structured and
+                        object-oriented way to create objects and manage their properties and methods. While JavaScript
+                        is prototype-based, classes offer a syntactic sugar over the existing prototype-based
+                        inheritance, making it resemble class-based languages like Java or C++</p>
 
-   <!-- Async modal  -->
-     <div class="modal fade" id="async">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title heading text-start fw-bold">JavaScript Objects</h1>
-            <button class="btn-close " data-bs-dismiss="modal"></button>
-          </div>
+                    <h2 class="fw-bold text-start">Constructor</h2>
+                    <p class="lead px-2">The constructor() method is a special method within a class that is
+                        automatically called when a new instance (object) of the class is created. It is used to
+                        initialize the object's properties</p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+    }
+                            </pre>
+                    </div>
+                    <hr>
+                    <h2 class="fw-bold text-start">Methods</h2>
+                    <p class="lead px-2">Methods are functions defined within a class that provide behavior for objects
+                        created from that class.</p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+  class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+      }
+    }
+                            </pre>
+                    </div>
+                    <hr>
+                    <h2 class="fw-bold text-start">Inheritance</h2>
+                    <p class="lead px-2"> Classes support inheritance using the extends keyword, allowing one class to
+                        inherit properties and methods from another. The super() keyword is used in the constructor of
+                        the child class to call the parent class's constructor.
+                    </p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+ class Student extends Person {
+      constructor(name, age, studentId) {
+        super(name, age); // Call parent constructor
+        this.studentId = studentId;
+      }
+    }
+                            </pre>
+                    </div>
+                    <hr>
+                    <h2 class="fw-bold text-start">Static Methods</h2>
+                    <p class="lead px-2">Static methods belong to the class itself, not to instances of the class. They
+                        are called directly on the class name.
+                    </p>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+ class Calculator {
+      static add(a, b) {
+        return a + b;
+      }
+    }
+
+    console.log(Calculator.add(5, 3)); // Output: 8
+                            </pre>
+                    </div>
+
+                </div>
+            </div>
         </div>
-          <div class="modal-body">
-            <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities</p>
-          </div>
-      </div>
-     </div>
-     <!-- DOM modal -->
-     <div class="modal fade" id="dom">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title heading text-start fw-bold">JavaScript Objects</h1>
-            <button class="btn-close " data-bs-dismiss="modal"></button>
-          </div>
+    </div>
+
+    <!-- Async modal  -->
+    <div class="modal fade" id="async">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading text-start card-title fw-bold">JavaScript Async</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">In JavaScript, "async" is a keyword used to define an asynchronous function.
+                        Asynchronous functions are designed to handle operations that might take time to complete, such
+                        as fetching data from a server or reading a file, without blocking the execution of the rest of
+                        the program. This ensures that the user interface remains responsive and the application doesn't
+                        freeze during these long-running tasks.
+                    </p>
+                    <h2 class="fw-bold text-start">Async keyword</h2>
+                    <p class="lead px-2">Placed before the function keyword (or arrow function syntax) to declare an
+                        asynchronous function. An async function automatically returns a Promise. The value returned
+                        from an async function resolves the Promise, while any error thrown within it rejects the
+                        Promise.</p>
+
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+ async function fetchData() {
+  // Asynchronous operations here
+      return "Data fetched successfully!";
+    }
+       </pre>
+                    </div>
+                    <hr>
+
+                    <h2 class="fw-bold text-start">Await keyword</h2>
+                    <p class="lead px-2">Can only be used inside an async function.
+                        Used to pause the execution of the async function until a Promise settles (either resolves or
+                        rejects).
+                        When await is used with a Promise, the function execution pauses until that Promise is
+                        fulfilled, and then resumes with the resolved value.</p>
+
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+    async function getUser() {
+      const response = await fetch('https://api.example.com/users/1');
+      const userData = await response.json();
+      console.log(userData);
+    }
+       </pre>
+                    </div>
+                    <hr>
+                    <h2 class="fw-bold text-start">Error Handling:</h2>
+                    <p class="lead px-2">try...catch blocks are used within async functions to handle errors (rejected
+                        Promises).</p>
+
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+  async function getSafeData() {
+      try {
+        const response = await fetch('https://api.example.com/invalid-url');
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+       </pre>
+                    </div>
+
+                </div>
+            </div>
         </div>
-          <div class="modal-body">
-            <p class="lead px-2">In JavaScript, an object is a fundamental data type used to store collections of data and more complex entities</p>
-          </div>
-      </div>
-     </div>
+    </div>
+    <!-- DOM modal -->
+    <div class="modal fade" id="dom">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading text-start fw-bold card-title">JavaScript DOM</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">The Document Object Model (DOM) is a programming interface for HTML, XML, and
+                        SVG documents. It represents the structure of a document as a logical tree, where each node in
+                        the tree is an object representing a part of the document, such as an element, attribute, or
+                        text content. While the DOM is not part of the core JavaScript language, it is a crucial Web API
+                        that allows JavaScript to interact with and manipulate the content, structure, and style of web
+                        pages.
+                    </p>
+                    <h2 class="fw-bold text-start">Tree Structure</h2>
+                    <p class="lead px-2">The browser creates a DOM tree when a web page loads, representing the hierarchical relationship between elements.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Nodes and Objects</h2>
+                    <p class="lead px-2">Each part of the document (elements, attributes, text) is represented as a node object in the DOM tree, with properties and methods for interaction.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Accessing Elements</h2>
+                    <p class="lead px-2">JavaScript provides methods to select and access specific elements in the DOM, such as <strong>document.getElementById()</strong> ,<strong>document.querySelector()</strong>, and <strong>document.getElementsByClassName().</strong></p>
+                    <h2 class="fw-bold text-start">Manipulation</h2>
+                    <p class="lead">Once an element is accessed, JavaScript can modify its properties (e.g., innerHTML, style), add or remove elements, and change attributes.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Example</h2>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>// Select an element by its ID
+const demoParagraph = document.getElementById("demo");
+
+// Change the text content of the paragraph
+demoParagraph.innerHTML = "Hello World from JavaScript!";
+
+// Add a CSS class to the paragraph
+demoParagraph.classList.add("highlight");</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
