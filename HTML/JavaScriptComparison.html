@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: #0F1630; */
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: brown;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background-color: black;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .dropdown li a:hover {
+            background-color: blue;
+        }
+
+        .nav-container {
+            background-color: #040c2e;
+        }
+
+        .background-color {
+            background-color: #010823;
+        }
+
+        p span {
+            color: blue;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .section {
+            background-image: linear-gradient(to right top, #2d3748, #2a3d54, #284460, #264b6c, #245279);
+        }
+
+        .section p {
+            color: wheat;
+        }
+
+        footer {
+            background-color: #0c1023;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Raleway';
+            font-weight: 300;
+        }
+
+        footer a i {
+            color: antiquewhite;
+        }
+
+        footer h5 {
+            font-weight: bold;
+        }
+
+        h5.h5 {
+            color: rgb(77, 77, 209);
+        }
+
+        @media (max-width:500px) {
+
+            footer h5 {
+                text-align: left;
+            }
+
+            footer a {
+                text-align: left;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid nav-container ">
+        <nav class="navbar  navbar-expand-lg ">
+
+            <img src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" class="navbar-brand ms-4"
+                alt="" style="width: 90px; height: 50px;">
+
+            <button class="navbar-toggler text-white  me-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainmenu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "> <i class="fa fa-bars mb-1" style="font-size: 36px;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
+                <ul class="navbar-nav fs-5 ms-3  ms-md-5">
+                    <li class="nav-item"><a href="/index.html" class="nav-link text-white px-2">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" id="" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Languages</a>
+                        <ul class="dropdown-menu bg-dark ">
+                            <li><a href="/HTML/JavaScript.html" class="dropdown-item text-white">JavaScript</a></li>
+                            <li><a href="" class="dropdown-item text-white">Python</a></li>
+                            <li><a href="" class="dropdown-item text-white">C++</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/HTML/Community.html" class="nav-link text-white px-2">Community</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Syntax</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
+                            </li>
+                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript
+                                    Syntax</a></li>
+                            <li><a href="/HTML/C++syntax.html" class="dropdown-item text-white">C++ Syntax</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid py-3 section">
+        <div class="row mt-2">
+            <div class="col-md-12 text-md-center text-start">
+                <h1 class="fw-bold px-md-0 px-2"><span>🔰</span>JavaScript: Language Comparison</h1>
+                <p class="lead px-md-0 px-3">Dive deep into how JavaScript stacks up against other popular languages.
+                </p>
+                <p class="lead px-md-0 px-3">Explore their strengths, weaknesses, and ideal use cases to make informed
+                    decision for tour projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                <table class="table table-striped table-dark rounded">
+                    <thead>
+                        <tr class="">
+                        <th class="">Characteristic</th>
+                        <th>JavaScript</th>
+                        <th>Python</th>
+                        <th>Java</th>
+                        <th>C#</th>
+                        </tr>
+                    </thead>
+                    <tbody class="p-4">
+                        <tr class="p-4">
+                            <td>Primary Use Case</td>
+                            <td>Frontend web,Backend(Node.js),Mobile</td>
+                            <td>Data Science, web Backend</td>
+                            <td>Enterprise App, Android Mobile</td>
+                            <td>Windows App, Game DEv</td>
+                        </tr>
+                        <tr>
+                            <td>Typing</td>
+                            <td>Dynamic,Weak</td>
+                            <td>Dynamic,Strong</td>
+                            <td>Static,Strong</td>
+                            <td>Static, Strong</td>
+                        </tr>
+                        <tr>
+                          <td>Paradigms</td>
+                          <td>Multi-paradigm (OOP, Functional,Imperative)</td>
+                          <td>Multi-paradigm (OOP, Functional, Imperative, Scripting)</td>
+                          <td>Object-Oriented, Structured, Concurrent</td>
+                          <td>Object-Oriented, Functional (LINQ), Imperative</td>
+                        </tr>
+                        <tr>
+                            <td>Concurrency</td>
+                            <td>Single-threaded (Event Loop, Non-blocking I/O)</td>
+                            <td>Multi-threaded (with GIL, typically uses async/await)</td>
+                            <td>Multi-threaded (True Concurrency)</td>
+                            <td>Multi-threaded (Async/Await)</td>
+                        </tr>
+                        <tr>
+                            <td>Learning Curve</td>
+                            <td>Moderate (Syntax is easy, async concepts can be tricky)</td>
+                            <td>Easy (Very readable syntax, vast libraries)</td>
+                            <td>Moderate to Hard (Verbose, strict type system)</td>
+                            <td>Moderate (Similar to Java, good tooling)</td>
+                        </tr>
+                        <tr>
+                            <td>Example</td>
+                            <td>console.log('Hello World')</td>
+                            <td>print('Hello World')</td>
+                            <td>system.out('Hello World')</td>
+                            <td>print('Hello World')</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid ">
+            <div class="row py-5 ms-md-3 ms-0 text-white px-4 ">
+                <div class="col-sm-3 text-start mt-4">
+                    <h5>About Us</h5>
+                    <a href="/HTML/Community.html" class="d-block mt-2">Community</a>
+                    <a href="/HTML/About.html" class="d-block mt-2">About Us</a>
+                    <a href="/HTML/Career.html" class="d-block mt-2">Career</a>
+                    <a href="/HTML/Team.html" class="d-block mt-2">Team</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4 ">
+                    <h5>Quick Links</h5>
+                    <a href="/HTML/Documentation.html" class="d-block mt-2">Documentation</a>
+                    <a href="/HTML/API.html" class="d-block mt-2">API Reference</a>
+                    <a href="/HTML/Blog.html" class="d-block mt-2">Blog</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4 ">
+                    <h5>Contact Info</h5>
+                    <a href="/HTML/support.html" class="d-block mt-2">Support Center</a>
+                    <a href="/HTML/Privacy.html" class="d-block mt-2">Privacy Policy</a>
+                    <a href="/HTML/Contact.html" class="d-block mt-2">Contact Us</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4">
+                    <h5>Social links</h5>
+                    <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white py-2" style="font-family: 'Lato', serif; ">
+                    <p class="">&copy; 2025 CodeCompanion : All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

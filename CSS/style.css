@@ -69,6 +69,159 @@ footer h5{
 .fixed-column-height{
     height: 200px;
 }
+.img2{
+    position: relative;
+animation: image;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+@keyframes image {
+    0%{
+        left: 0px;
+        top:0px;
+    }
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+#img-card{
+    background-color: #0F1630;
+    height: 220px;
+}
+#img1{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    animation: image1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#img2{
+    position: relative;
+    left: 220px;
+    top: 0px;
+    animation: image2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#img3{
+    position: relative;
+    left: -145px;
+    top: 120px;
+    animation: image3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#img4{
+    position: relative;
+    left: 70px;
+    top: 120px;
+    animation: image4;
+ animation-duration: 7s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes image1 {
+    0%{
+        left: 0px;
+        top:0px;
+    }
+    25% {
+        left: 320px;
+        top: 0px;
+    }
+    50%{
+        left: 320px;
+        top: 120px;
+    }
+    75%{
+        left: 0;
+        top: 120px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes image2 {
+    0%{
+        left: 250px;
+        top:0px;
+    }
+    25% {
+        left: 250px;
+        top: 120px;
+    }
+    50%{
+        left: -70px;
+        top: 120px;
+    }
+    75%{
+        left: -70px;
+        top: 0px;
+    }
+    100%{
+        left: 250px;
+        top: 0px;
+    }
+}
+@keyframes image3 {
+    0%{
+        left: -145px;
+        top:120px;
+    }
+    25% {
+        left: -145px;
+        top: 0px;
+    }
+    50%{
+        left: 140px;
+        top: 0px;
+    }
+    75%{
+        left: 140px;
+        top: 120px;
+    }
+    100%{
+        left: -145px;
+        top: 120px;
+    }
+}
+@keyframes image4 {
+    0%{
+        left: 70px;
+        top:120px;
+    }
+    25% {
+        left: -220px;
+        top: 120px;
+    }
+    50%{
+        left: -220px;
+        top: 0px;
+    }
+    75%{
+        left: 70px;
+        top: 0px;
+    }
+    100%{
+        left: 70px;
+        top: 120px;
+    }
+}
 
 @media (max-width:500px) {
     footer h5{
@@ -77,5 +230,18 @@ footer h5{
     footer a{
         text-align: left;
     }
+    #img4{
+    position: relative;
+    left: 10px;
+    top: 120px;
+}
+#img2{
+    position: relative;
+    left: 160px;
+    top: 0px;
+    /* animation: image2; */
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
      
 }
