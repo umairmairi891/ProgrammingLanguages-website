@@ -75,28 +75,7 @@ animation: image;
 animation-duration: 4s;
 animation-iteration-count: infinite;
 }
-@keyframes image {
-    0%{
-        left: 0px;
-        top:0px;
-    }
-    25% {
-        left: 200px;
-        top: 0px;
-    }
-    50%{
-        left: 200px;
-        top: 200px;
-    }
-    75%{
-        left: 0;
-        top: 200px;
-    }
-    100%{
-        left: 0px;
-        top: 0px;
-    }
-}
+
 #img-card{
     background-color: #0F1630;
     height: 220px;
@@ -184,15 +163,15 @@ animation-iteration-count: infinite;
         top:120px;
     }
     25% {
-        left: -145px;
+        left: -155px;
         top: 0px;
     }
     50%{
-        left: 140px;
+        left: 160px;
         top: 0px;
     }
     75%{
-        left: 140px;
+        left: 160px;
         top: 120px;
     }
     100%{
@@ -223,6 +202,99 @@ animation-iteration-count: infinite;
     }
 }
 
+/* animation in smaller screen  */
+
+@keyframes img1 {
+    0%{
+        left: 0px;
+        top:0px;
+    }
+    25% {
+        left: 250px;
+        top: 0px;
+    }
+    50%{
+        left: 250px;
+        top: 120px;
+    }
+    75%{
+        left: 0;
+        top: 120px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes img2 {
+    0%{
+        left: 170px;
+        top:0px;
+    }
+    25% {
+        left: 170px;
+        top: 120px;
+    }
+    50%{
+        left: -70px;
+        top: 120px;
+    }
+    75%{
+        left: -70px;
+        top: 0px;
+    }
+    100%{
+        left: 170px;
+        top: 0px;
+    }
+}
+
+@keyframes img3 {
+    0%{
+        left: -145px;
+        top:120px;
+    }
+    25% {
+        left: -145px;
+        top: 0px;
+    }
+    50%{
+        left: 100px;
+        top: 0px;
+    }
+    75%{
+        left: 100px;
+        top: 120px;
+    }
+    100%{
+        left: -145px;
+        top: 120px;
+    }
+}
+@keyframes img4 {
+    0%{
+        left: 28px;
+        top:120px;
+    }
+    25% {
+        left: -220px;
+        top: 120px;
+    }
+    50%{
+        left: -220px;
+        top: 0px;
+    }
+    75%{
+        left: 28px;
+        top: 0px;
+    }
+    100%{
+        left: 28px;
+        top: 120px;
+    }
+}
+
 @media (max-width:500px) {
     footer h5{
         text-align: left;
@@ -230,18 +302,30 @@ animation-iteration-count: infinite;
     footer a{
         text-align: left;
     }
-    #img4{
+ #img1{
     position: relative;
-    left: 10px;
-    top: 120px;
-}
-#img2{
-    position: relative;
-    left: 160px;
     top: 0px;
-    /* animation: image2; */
+    left: 0px;
+    animation: img1;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
-     
+#img2{
+    position: relative;
+    animation: img2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#img3{
+    position: relative;
+    animation: img3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#img4{
+    position: relative;
+    animation: img4;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
 }
