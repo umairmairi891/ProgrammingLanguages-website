@@ -58,7 +58,7 @@
         }
 
         footer a i {
-            color: antiquewhite;
+            color: whitesmoke;
         }
 
         footer h5 {
@@ -105,7 +105,43 @@
             font-family: 'Times New Roman', Times, serif;
             font-weight: 600;
         }
+        .card{
+            position: relative;
+        }
+        .team-card{
+            position: relative;
+        }
+        .card:hover::after{
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 5px;
+            background: conic-gradient(from var(--angle), blue,black,green,red,black,blue);
+            /* background: #040c2e; */
+            z-index: -1;
+        }
+        .card:hover::after{
+            animation: glowing-border 3.5s linear infinite;
+            transition:animation .3s ;
+        }
+        
+        @property --angle{
+            syntax: "<angle>";
+            initial-value: 53deg;
+            inherits: false;
+        }
 
+        @keyframes glowing-border {
+            from{
+                --angle:53deg;
+            }
+            to{
+                --angle:413deg;
+            }
+        }
         .card-mission {
             color: #303F9F;
             font-weight: 400;
@@ -252,10 +288,10 @@
                     <div class="row text-center mt-3">
                         <div class="col-md-4 ">
                             <div class="card team-card card-shadow card-bg text-center h-100">
-                                <img src="/Images/overview.png" class=" text-center card-header mt-2" alt=""
-                                    style="border-radius: 50%;">
+                                <img src="/Images/Webdeveloper.jpg" class=" text-center card-header mt-2" alt=""
+                                    style="">
                                 <div class="card-body">
-                                    <h4 class="fw-bold ">Ali Khan</h4>
+                                    <h4 class="fw-bold ">Edward</h4>
                                     <div class="card-title ">
                                         <p class="lead fw-bold">Front-end Developer</p>
                                     </div>
@@ -266,9 +302,9 @@
                             </div>
                         </div>
                         <div class="col-md-4 ">
-                            <div class="card team-card card-shadow card-bg text-center mt-md-0 mt-4 ">
-                                <img src="/Images/overview.png" class="card-img-top card-header mt-2" alt=""
-                                    style="border-radius: 50%;">
+                            <div class="card team-card card-shadow card-bg text-center mt-md-0 mt-4 h-100">
+                                <img src="/Images/Webdeveloper3.jpg" class="card-img-top card-header mt-2" alt=""
+                                    style="">
                                 <div class="card-body">
                                     <h4 class="fw-bold ">Fatima Rehman</h4>
                                     <div class="card-title">
@@ -281,11 +317,11 @@
                             </div>
                         </div>
                         <div class="col-md-4 ">
-                            <div class="card card-bg card-shadow team-card text-center mt-md-0 mt-5 ">
-                                <img src="/Images/overview.png" class="card-img-top card-header mt-2" alt=""
-                                    style="border-radius: 50%;">
+                            <div class="card card-bg card-shadow team-card text-center mt-md-0 mt-5 h-100">
+                                <img src="/Images/Webdeveloper2.jpg" class="card-img-top card-header mt-2" alt=""
+                                    style="">
                                 <div class="card-body">
-                                    <h4 class="fw-bold ">Zain Ahmed</h4>
+                                    <h4 class="fw-bold ">Jack Will </h4>
                                     <div class="card-title">
                                         <p class="lead fw-bold">UI/UX Designer</p>
                                     </div>
@@ -300,9 +336,9 @@
 
                     <div class="row mt-4">
                         <div class="col-md-4 ">
-                            <div class="card team-card card-shadow card-bg text-center mt-md-0 mt-4 ">
-                                <img src="/Images/overview.png" class="card-img-top card-header mt-2" alt=""
-                                    style="border-radius: 50%;">
+                            <div class="card team-card card-shadow card-bg text-center mt-md-0 mt-5 ">
+                                <img src="/Images/Webdeveloper3.jpg" class="card-img-top card-header mt-2" alt=""
+                                    style="">
                                 <div class="card-body">
                                     <h4 class="fw-bold ">Sara Malik</h4>
                                     <div class="card-title ">
@@ -316,10 +352,10 @@
                         </div>
                         <div class="col-md-4 ">
                             <div class="card team-card card-shadow card-bg text-center mt-md-0 mt-4">
-                                <img src="/Images/overview.png" class="card-img-top card-header mt-2" alt=""
-                                    style="border-radius: 50%;">
+                                <img src="/Images/Webdeveloper4.jpg" class="card-img-top card-header mt-2" alt=""
+                                    style="">
                                 <div class="card-body">
-                                    <h4 class="fw-bold ">Hamza Tariq</h4>
+                                    <h4 class="fw-bold ">Joe do</h4>
                                     <div class="card-title ">
                                         <p class="lead fw-bold">Backend Support</p>
                                     </div>
@@ -332,8 +368,8 @@
 
                         <div class="col-md-4 ">
                             <div class="card team-card card-shadow card-bg text-center mt-md-0 mt-4">
-                                <img src="/Images/overview.png" class="card-img-top card-header mt-2" alt=""
-                                    style="border-radius: 50%;">
+                                <img src="/Images/Webdeveloper3.jpg" class="card-img-top card-header mt-2" alt=""
+                                    style="">
                                 <div class="card-body">
                                     <h4 class="fw-bold ">Ayesha Noor</h4>
                                     <div class="card-title ">
@@ -408,10 +444,10 @@
                 </div>
                 <div class="col-sm-3 text-start mt-4">
                     <h5>Social links</h5>
-                    <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-                    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
-                    <a href="https://github.com"><i class="fa fa-github"></i></a>
+                    <a href="https://facebook.com"><i class="fa fa-facebook ms-2"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter ms-2"></i></a>
+                    <a href="https://instagram.com"><i class="fa fa-instagram ms-2"></i></a>
+                    <a href="https://github.com"><i class="fa fa-github ms-2"></i></a>
                 </div>
             </div>
             <div class="row">

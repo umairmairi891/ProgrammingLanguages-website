@@ -45,106 +45,118 @@
  }
 
  footer a i {
-     color: antiquewhite;
+     color: whitesmoke;
  }
 
  footer h5 {
      font-weight: bold;
  }
-h1,
-        h2 {
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 500;
-        }
- 
-        .heading {
-            border-left: 4px solid blue;
-            padding-left: 0.75rem;
-        }
 
-        .card-shadow {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-        }
+ h1,
+ h2 {
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 500;
+ }
 
-        .card h2 {
-            color: #303F9F;
-        }
+ .heading {
+     border-left: 4px solid blue;
+     padding-left: 0.75rem;
+ }
 
-        .text-indigo {
-            color: #E8EAF6;
-        }
+ .card-shadow {
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+ }
 
-        .card-title {
+ .card h2 {
+     color: #303F9F;
+ }
 
-            color: #283593;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 600;
-        }
+ .text-indigo {
+     color: #E8EAF6;
+ }
 
-        .text-justify {
-            text-align: justify;
-        }
+ .card-title {
 
-        .card-bg {
-            background-color: #E8EAF6;
-        }
-        .syntax{
-            background-color: #212529;
-            color: #66bb6a;
-        }
+     color: #283593;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 600;
+ }
 
-        .sidebar{
-            position: relative;
-            
-            width: 20%;
-            background-color:  #2D3E40;
-            height: 100vh;
-            float:left;
-            display: none;
-            /* overflow: auto; */
-        }
-        .sidebar ul li{
-            margin: 10px;
-            cursor: pointer;
-            background-color:teal;
-            padding: 10px;
-            color:whitesmoke;
-            border-radius: 10px;
-            font-weight: 500;
-            font-family:  Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .sidebar ul li a{
-            text-decoration: none;
-            color: whitesmoke;
-        }
-        .sidebar ul li:hover{
-            background-color: blue;
-            transition: .4s;
-        }
-        @media (max-width:600px) {
-            .sidebar{
-                position: relative;
-                width: 40%;
-            }
-        }
-        @media (max-width:700px) {
-            .sidebar{
-                position: relative;
-                width: 40%;
-            }
-        }
-        @media (max-width:900px) {
-            .sidebar{
-                position: relative;
-                width: 40%;
-            }
-        }
-        @media (max-width:1000px) {
-            .sidebar{
-                position: relative;
-                width: 40%;
-            }
-        }
+ .text-justify {
+     text-align: justify;
+ }
+
+ .card-bg {
+     background-color: #E8EAF6;
+ }
+
+ .syntax {
+     background-color: #212529;
+     color: #66bb6a;
+ }
+.active{
+    border-bottom: 3px solid yellow;
+}
+ .sidebar {
+     position: relative;
+
+     width: 20%;
+     background-color: #2D3E40;
+     height: 100vh;
+     float: left;
+     display: none;
+     /* overflow: auto; */
+ }
+
+ .sidebar ul li {
+     margin: 10px;
+     cursor: pointer;
+     background-color: teal;
+     padding: 10px;
+     color: whitesmoke;
+     border-radius: 10px;
+     font-weight: 500;
+     font-family: Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .sidebar ul li a {
+     text-decoration: none;
+     color: whitesmoke;
+ }
+
+ .sidebar ul li:hover {
+     background-color: blue;
+     transition: .4s;
+ }
+
+ @media (max-width:600px) {
+     .sidebar {
+         position: relative;
+         width: 40%;
+     }
+ }
+
+ @media (max-width:700px) {
+     .sidebar {
+         position: relative;
+         width: 40%;
+     }
+ }
+
+ @media (max-width:900px) {
+     .sidebar {
+         position: relative;
+         width: 40%;
+     }
+ }
+
+ @media (max-width:1000px) {
+     .sidebar {
+         position: relative;
+         width: 40%;
+     }
+ }
+
  @media (max-width:500px) {
      footer h5 {
          text-align: left;
@@ -153,10 +165,11 @@ h1,
      footer a {
          text-align: left;
      }
-     .sidebar{
-        position: relative;
-        width: 100%;
+
+     .sidebar {
+         position: relative;
+         width: 100%;
      }
-     
+
 
  }
