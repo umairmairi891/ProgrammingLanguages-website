@@ -87,220 +87,79 @@ animation-iteration-count: infinite;
     background-color: #0F1630;
     height: 220px;
 }
-#img1{
-    position: relative;
-    left: 0px;
-    top: 0px;
-    animation: image1;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-#img2{
-    position: relative;
-    left: 220px;
-    top: 0px;
-    animation: image2;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-#img3{
-    position: relative;
-    left: -145px;
-    top: 120px;
-    animation: image3;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-#img4{
-    position: relative;
-    left: 70px;
-    top: 120px;
-    animation: image4;
- animation-duration: 7s;
- animation-iteration-count: infinite;
+#img-card {
+  background-color: #0F1630;
+  height: auto;
+  min-height: 220px;
 }
 
-@keyframes image1 {
-    0%{
-        left: 0px;
-        top:0px;
-    }
-    25% {
-        left: 320px;
-        top: 0px;
-    }
-    50%{
-        left: 320px;
-        top: 120px;
-    }
-    75%{
-        left: 0;
-        top: 120px;
-    }
-    100%{
-        left: 0px;
-        top: 0px;
-    }
-}
-@keyframes image2 {
-    0%{
-        left: 250px;
-        top:0px;
-    }
-    25% {
-        left: 250px;
-        top: 120px;
-    }
-    50%{
-        left: -70px;
-        top: 120px;
-    }
-    75%{
-        left: -70px;
-        top: 0px;
-    }
-    100%{
-        left: 250px;
-        top: 0px;
-    }
-}
-@keyframes image3 {
-    0%{
-        left: -145px;
-        top:120px;
-    }
-    25% {
-        left: -155px;
-        top: 0px;
-    }
-    50%{
-        left: 160px;
-        top: 0px;
-    }
-    75%{
-        left: 160px;
-        top: 120px;
-    }
-    100%{
-        left: -145px;
-        top: 120px;
-    }
-}
-@keyframes image4 {
-    0%{
-        left: 70px;
-        top:120px;
-    }
-    25% {
-        left: -220px;
-        top: 120px;
-    }
-    50%{
-        left: -220px;
-        top: 0px;
-    }
-    75%{
-        left: 70px;
-        top: 0px;
-    }
-    100%{
-        left: 70px;
-        top: 120px;
-    }
+.corner-img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  animation: moveAround 7s linear infinite;
 }
 
-/* animation in smaller screen  */
+/* Each image starts at a different corner */
+#img1 { animation-delay: 0s; }
+#img2 { animation-delay: 1.75s; }
+#img3 { animation-delay: 3.5s; }
+#img4 { animation-delay: 5.25s; }
 
-@keyframes img1 {
-    0%{
-        left: 0px;
-        top:0px;
-    }
-    25% {
-        left: 250px;
-        top: 0px;
-    }
-    50%{
-        left: 250px;
-        top: 120px;
-    }
-    75%{
-        left: 0;
-        top: 120px;
-    }
-    100%{
-        left: 0px;
-        top: 0px;
-    }
-}
-
-@keyframes img2 {
-    0%{
-        left: 170px;
-        top:0px;
-    }
-    25% {
-        left: 170px;
-        top: 120px;
-    }
-    50%{
-        left: -70px;
-        top: 120px;
-    }
-    75%{
-        left: -70px;
-        top: 0px;
-    }
-    100%{
-        left: 170px;
-        top: 0px;
-    }
+@keyframes moveAround {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 60px);
+  }
+  50% {
+    top: calc(100% - 60px);
+    left: calc(100% - 60px);
+  }
+  75% {
+    top: calc(100% - 60px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
 }
 
-@keyframes img3 {
-    0%{
-        left: -145px;
-        top:120px;
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .corner-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  @keyframes moveAround {
+    0% {
+      top: 0;
+      left: 0;
     }
     25% {
-        left: -145px;
-        top: 0px;
+      top: 0;
+      left: calc(100% - 50px);
     }
-    50%{
-        left: 100px;
-        top: 0px;
+    50% {
+      top: calc(100% - 50px);
+      left: calc(100% - 50px);
     }
-    75%{
-        left: 100px;
-        top: 120px;
+    75% {
+      top: calc(100% - 50px);
+      left: 0;
     }
-    100%{
-        left: -145px;
-        top: 120px;
+    100% {
+      top: 0;
+      left: 0;
     }
+  }
 }
-@keyframes img4 {
-    0%{
-        left: 28px;
-        top:120px;
-    }
-    25% {
-        left: -220px;
-        top: 120px;
-    }
-    50%{
-        left: -220px;
-        top: 0px;
-    }
-    75%{
-        left: 28px;
-        top: 0px;
-    }
-    100%{
-        left: 28px;
-        top: 120px;
-    }
-}
+
 
 @media (max-width:500px) {
     footer h5{
@@ -309,30 +168,5 @@ animation-iteration-count: infinite;
     footer a{
         text-align: left;
     }
- #img1{
-    position: relative;
-    top: 0px;
-    left: 0px;
-    animation: img1;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-#img2{
-    position: relative;
-    animation: img2;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-#img3{
-    position: relative;
-    animation: img3;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-#img4{
-    position: relative;
-    animation: img4;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
+ 
 }
