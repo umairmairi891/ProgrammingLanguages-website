@@ -4,101 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Page</title>
-
+    <title>JavaScript Comparison Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #0F1630;
-    }
 
-    .navbar-brand {
-        font-weight: 600;
-        font-size: 1.5rem;
-        font-family: 'Times New Roman', Times, serif;
-        color: brown;
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: #0F1630; */
+        }
 
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-        margin-right: 20px;
-        font-size: 18px;
-    }
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: brown;
+        }
 
-    nav ul li a:hover {
-        background-color: black;
-        border-radius: 5px;
-        transition: .3s;
-    }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin-right: 20px;
+            font-size: 18px;
+        }
 
-    .dropdown li a:hover {
-        background-color: blue;
-    }
+        nav ul li a:hover {
+            background-color: black;
+            border-radius: 5px;
+            transition: .3s;
+        }
 
-    .nav-container {
-        background-color: #040c2e;   
-    }
+        .dropdown li a:hover {
+            background-color: blue;
+        }
 
-    .background-color {
-        background-color: #010823;
-    }
+        .nav-container {
+            background-color: #040c2e;
+        }
 
-    p span {
-        color: blue;
-    }
+        .background-color {
+            background-color: #010823;
+        }
 
+        p span {
+            color: blue;
+        }
 
-    footer {
-        background-color: #0c1023;
-    }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
 
-    footer a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Raleway';
-        font-weight: 300;
-    }
+        .section {
+            background-image: linear-gradient(to right top, #2d3748, #2a3d54, #284460, #264b6c, #245279);
+        }
 
-    footer a i {
-        color: whitesmoke;
-    }
+        .section p {
+            color: white;
+        }
 
-    footer h5 {
-        font-weight: bold;
-    }
-
-    h5.h5 {
-        color:whitesmoke;
-        font-weight: 500;
-    }
-    @media (max-width:500px) {
-        
-        footer h5 {
-            text-align: left;
+        footer {
+            background-color: #0c1023;
         }
 
         footer a {
-            text-align: left;
+            text-decoration: none;
+            color: white;
+            font-family: 'Raleway';
+            font-weight: 300;
         }
 
-    }
-</style>
+        footer a i {
+            color: whitesmoke;
+        }
+
+        footer h5 {
+            font-weight: bold;
+        }
+       table{
+        border: 3px solid black;
+       }
+
+        h5.h5 {
+            color: rgb(77, 77, 209);
+        }
+        table tbody td:first-child{
+            font-weight: 700;
+        }
+ 
+        
+        @media (max-width:500px) {
+
+            footer h5 {
+                text-align: left;
+            }
+
+            footer a {
+                text-align: left;
+            }
+
+        }
+    </style>
+</head>
 
 <body>
 
-    <div class="container-fluid nav-container">
+    <div class="container-fluid nav-container ">
         <nav class="navbar  navbar-expand-lg ">
 
             <img src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" class="navbar-brand ms-4"
@@ -111,7 +129,7 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
-                <ul class="navbar-nav fs-5 ms-3  ms-md-5 ">
+                <ul class="navbar-nav fs-5 ms-3  ms-md-5">
                     <li class="nav-item"><a href="/index.html" class="nav-link text-white px-2">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link text-white dropdown-toggle px-2" id="" data-bs-target="dropdown"
@@ -122,64 +140,45 @@
                             <li><a href="" class="dropdown-item text-white">C++</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="/HTML/Community.html" class="nav-link text-white px-2">Community</a></li>
-                    <li class="nav-item dropdown ">
-                        <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown" data-bs-toggle="dropdown">Syntax</a>
+                    <li class="nav-item"><a href="/HTML/Community.html" class="nav-link text-white px-2">Community</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Syntax</a>
                         <ul class="dropdown-menu bg-dark">
-                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a></li>
-                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript Syntax</a></li>
+                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
+                            </li>
+                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript
+                                    Syntax</a></li>
                             <li><a href="/HTML/C++syntax.html" class="dropdown-item text-white">C++ Syntax</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2 ">About</a></li>
+                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2">About</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="container-fluid background-color">
-    <div class="row py-5 text-white px-md-5 px-1 no-gutters ">
-        <div class="col-md-6 text-white px-md-5 px-3">
-            <h1 class="fw-bold">Who We are</h1>
-            <h5 class="h5 mt-4 fw-light">Empowering developers through knowledge, Practice and Examples</h5>
-        </div>
-    </div>
-</div>
 
-    <div class="container-fluid background-color  text-white py-5">
-        <div class="row px-md-3 px-md-4 px-2 ms-2 ms-md-5">
-            <div class="col-md-7">
-                <h2>Our Mission</h2>
-                <p class="mt-4">To make Programming easy and accessible to everyone by providing a comprehensivehub for syntax,
-                    Tutorials and tools across all programming Languages </p>
-                <h2>Our Vision</h2>
-                <p>Build a global community where coders, from students to professionals, can explore, learn and
-                    contribute</p>
-            </div>
-            <div class="col-md-5 mt-4 mt-md-0 ">
-                <h2>What we offer</h2>
-                <p class="mt-4"><span>&#10003</span> Clean syntax reference pages for 50+ languages</p>
-                <p><span>&#10003</span> Real-time syntax checker</p>
-                <p><span>&#10003</span> Beginner to expert Tutorials</p>
-                <p class=""><span>&#10003</span> Community Q&A and contribution</p>
-            </div>
-        </div>
-        <div class="row px-md-3 px-md-4 px-2  mt-4 mt-md-0 ms-2 ms-md-5">
-            <div class="col-md-7">
-                <h2>Meet the Team</h2>
-                <p>For question, feedback or collaborations</p>
-                <p><i class="fa fa-envelope me-3"></i> Contact@codecompanion.dev</p>
-            </div>
-            <div class="col-md-5 mt-4 mt-md-0">
-                <h2>Development</h2>
-                <p>Built by me</p>
-                <p>Develop Using HTML, CSS , BootStrap and JavaScript</p>
-                <p></p>
+    <div class="container-fluid py-3 section">
+        <div class="row mt-2">
+            <div class="col-md-12 text-md-center text-start text-align">
+                <h1 class="fw-bold px-md-0 px-2"><span>🔰</span>Python: Language Comparison</h1>
+                <p class="lead px-md-0 px-3">Dive deep into how Python stacks up against other popular languages.
+                </p>
+                <p class="lead px-md-0 px-3">Explore their strengths, weaknesses, and ideal use cases to make informed
+                    decision for tour projects.</p>
+                    <div class=" text-center">
+                    <a href="/HTML/Python.html" class=""><button class="btn btn-primary"> <-Back to Python</button></a>
+                        </div>
             </div>
         </div>
     </div>
+
+    
+
     <footer>
-        <div class="container-fluid  ">
-            <div class="row py-5 text-white px-4 ms-md-3 ms-0">
+        <div class="container-fluid ">
+            <div class="row py-5 ms-md-3 ms-0 text-white px-4 ">
                 <div class="col-sm-3 text-start mt-4">
                     <h5>About Us</h5>
                     <a href="/HTML/Community.html" class="d-block mt-2">Community</a>
@@ -214,6 +213,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

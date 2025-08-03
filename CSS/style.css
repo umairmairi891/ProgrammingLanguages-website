@@ -28,6 +28,7 @@ background-color: #0F1630;
     padding-bottom: 2rem;
 }
 
+
 button:hover{
     background-color:#141c41;
 }
@@ -71,10 +72,7 @@ footer h5{
     height: 200px;
 }
 
-    .active{
-    border-bottom: 3px solid yellow;
-    transition: .3s ease-in-out;
-}
+ 
 
 .img2{
     position: relative;
@@ -84,11 +82,11 @@ animation-iteration-count: infinite;
 }
 
 #img-card{
-    background-color: #0F1630;
     height: 220px;
 }
 #img-card {
-  background-color: #0F1630;
+  background-color:#141c41;
+  border: none;
   height: auto;
   min-height: 220px;
 }
@@ -97,6 +95,7 @@ animation-iteration-count: infinite;
   position: absolute;
   width: 60px;
   height: 60px;
+  padding: 5px;
   animation: moveAround 7s linear infinite;
 }
 
