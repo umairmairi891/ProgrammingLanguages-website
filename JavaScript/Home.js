@@ -1,4 +1,17 @@
 
+const sidebar=document.querySelector('.sidebar');
+
+const browsebtn=document.getElementById('browse-btn')
+
+browsebtn.addEventListener('click',()=>{
+  sidebar.style.display='block';
+})
+
+function closeside(){
+  sidebar.style.display='none'
+}
+
+
 let selectedLanguage=null;
 
   document.querySelectorAll(".list-unstyled li").forEach(item => {

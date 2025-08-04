@@ -16,12 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png">
 </head>
+
 <body>
 
     <div class="container-fluid nav-container">
@@ -63,27 +68,54 @@
                 </ul>
             </div>
         </nav>
-        <div class="row mt-5 text-white px-md-5 px-1 no-gutters ">
+        <div class="row mt-5 position-relative text-white px-md-5 px-1 no-gutters ">
             <div class="col-md-8 text-white px-md-5 px-3">
                 <h2 class="fw-bold">Explore Every Programming Language in One place</h2>
                 <h5 class="lead  mt-4">Syntax,Tutorials and Tools for developers of all Levels</h5>
-                <button id="browse-btn" class="btn btn-primary mt-4 ">Browse Languages</button>
-                <button class="btn btn-light mt-4 ms-0 ms-md-3">Start Learning</button>
+                <button id="browse-btn" class="btn btn-primary mt-4" onclick="showbar()">Browse Languages</button>
+
+
+                <button class="btn btn-light mt-4 ms-0 ms-md-3 dropdown">
+                    <a href="" id="button" class="dropdown-toggle" data-bs-target="dropdown"
+                        data-bs-toggle="dropdown">Start Learning</a>
+                    <ul class="dropdown-menu list">
+                        <li><a href="" class="dropdown-item py-2">JavaScript</a></li>
+                        <li><a href="" class="dropdown-item py-2">Python</a></li>
+                        <li><a href="" class="dropdown-item py-2">C++</a></li>
+                    </ul>
+                </button>
             </div>
             <div class="col-md-4 mt-4 mt-md-0 ">
                 <div class="card rounded overflow-hidden position-relative" id="img-card">
                     <div class="card-body position-relative" style="height: 220px;">
-                       <img id="img1" class="corner-img" src="/Images/JavaScriptlogo.png" alt="" width="70px" height="60px">
-                       <img id="img2" class="corner-img" src="/Images/Javalogo.png" alt="" width="70px" height="60px">
-                       <img id="img3" class="corner-img" src="/Images/Pythonlogo.png" alt="" width="70px" height="60px">
-                       <img id="img4" class="corner-img" src="/Images/C++logo.png" alt="" width="70px" height="60px">
+                        <img id="img1" class="corner-img" src="/Images/JavaScriptlogo.png" alt="" width="70px"
+                            height="60px">
+                        <img id="img2" class="corner-img" src="/Images/Javalogo.png" alt="" width="70px" height="60px">
+                        <img id="img3" class="corner-img" src="/Images/Pythonlogo.png" alt="" width="70px"
+                            height="60px">
+                        <img id="img4" class="corner-img" src="/Images/C++logo.png" alt="" width="70px" height="60px">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="sidebar">
+        <span class="text-white"> <button class="btn btn-close fw-bold text-white"  onclick="closeside()"></button></span>
+        <ul class="list-unstyled animate-animated animate__fadeInLeft" >
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">Python</a></li>
+            <li><a href="">C++</a></li>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">Java</a></li>
+        </ul>
+    </div>
+
+
     <div class="container mt-5 ">
-        <div class="row overflow-hidden h-100 px-2 px-md-0">
+        <div class="row overflow-hidden  h-100 px-2 px-md-0">
             <div class="col-md-3 bg-dark py-2 rounded  ">
                 <label for="inputbox" class="label-input-form fw-bold text-white ms-3 fs-4"
                     style="font-family: 'Times New Roman', Times, serif;">Languages</label>
@@ -103,7 +135,7 @@
                 </ul>
             </div>
             <div class="col-md-9  rounded px-md-4 px-1">
-                <div class="button">
+                <div class="button py-2">
                     <button class="btn text-white fw-bold  ">OverView</button>
                     <button class="btn text-white fw-bold ">Syntax</button>
                     <button class="btn text-white fw-bold ">Examples</button>
@@ -156,4 +188,5 @@
     </footer>
 </body>
 <script src="/JavaScript/Home.js"></script>
+
 </html>
