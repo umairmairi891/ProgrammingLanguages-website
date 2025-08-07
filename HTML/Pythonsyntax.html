@@ -57,6 +57,10 @@
             font-weight: 300;
         }
 
+        a.nav-link.dropdown-toggle::after {
+            vertical-align: middle;
+        }
+
         footer a i {
             color: whitesmoke;
         }
@@ -64,6 +68,7 @@
         footer h5 {
             font-weight: bold;
         }
+
         .nav-container {
             background-color: #040c2e;
 
@@ -88,9 +93,11 @@
             font-family: 'Times New Roman', Times, serif;
             font-weight: 600;
         }
-       h1{
-        font-family: 'Times New Roman', Times, serif;
-       }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
         .text-justify {
             text-align: justify;
         }
@@ -111,6 +118,16 @@
         textarea {
             border: none;
             outline: none;
+        }
+
+        button a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        button :hover {
+            color: aliceblue;
+            font-weight: 500;
         }
 
         @media (max-width:500px) {
@@ -149,7 +166,7 @@
                         <ul class="dropdown-menu bg-dark ">
                             <li><a href="/HTML/JavaScript.html" class="dropdown-item text-white">JavaScript</a></li>
                             <li><a href="/HTML/Python.html" class="dropdown-item text-white">Python</a></li>
-                            <li><a href="" class="dropdown-item text-white">C++</a></li>
+                            <li><a href="/HTML/C++.html" class="dropdown-item text-white">C++</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="/HTML/Community.html" class="nav-link text-white px-2">Community</a>
@@ -160,7 +177,8 @@
                         <ul class="dropdown-menu bg-dark">
                             <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
                             </li>
-                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript Syntax</a></li>
+                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript
+                                    Syntax</a></li>
                             <li><a href="/HTML/C++syntax.html" class="dropdown-item text-white">C++ Syntax</a></li>
                         </ul>
                     </li>
@@ -175,6 +193,9 @@
                 <div class="card card-shadow p-4 text-center">
                     <h1 class="fw-bold">Python Syntax</h1>
                     <p>Introduction to the syntax of the python programming Language</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary  "><a href="/HTML/Python.html">Start Learning More-></a></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,31 +205,32 @@
         <div class="row  py-3 ">
             <div class="col-md-6  ">
                 <div class="card card-shadow p-4">
-                <div class="card-title">
-                    <h2 class="heading fw-bold">Basic Syntax</h2>
-                </div>
-                <div class="card-text mt-2 py-1">
-                    <p class="lead">Python uses indentation define code blocks and statements are typically written one per
-                        line.</p>
-                    <div class="syntax py-2 px-3 rounded">
-                        <pre>
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">Basic Syntax</h2>
+                    </div>
+                    <div class="card-text mt-2 py-1">
+                        <p class="lead">Python uses indentation define code blocks and statements are typically written
+                            one per
+                            line.</p>
+                        <div class="syntax py-2 px-3 rounded">
+                            <pre>
 greet();
 print('Hello world')
                         </pre>
+                        </div>
                     </div>
-                    </div>
-                    </div>
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="card card-shadow p-4 mt-4 mt-md-0">
                     <div class="card-title">
-                        <h2  class="heading fw-bold">Variables</h2>
+                        <h2 class="heading fw-bold">Variables</h2>
                     </div>
                     <div class="card-text">
-                        
+
                         <p class="lead">Variables are dynamically typed and created when values assigned</p>
                         <div class="syntax px-3 py-2 rounded">
-                        <pre>
+                            <pre>
 message ='Hello python'
 x=2
 pl=5.14
@@ -223,39 +245,40 @@ is_python_fun=True
 
         <div class="row  py-3">
             <div class="col-md-6">
-               <div class="card card-shadow p-4">
-                <div class="card-title mt-2">
-                    <h2 class="heading fw-bold">Data Types</h2>
-                </div>
-                <div class="card-text">
-                    <p class="lead">Python has several built in data types for different kinds of values</p>
-                    <div class="syntax px-3 py-2 rounded">
-                        <pre>
+                <div class="card card-shadow p-4">
+                    <div class="card-title mt-2">
+                        <h2 class="heading fw-bold">Data Types</h2>
+                    </div>
+                    <div class="card-text">
+                        <p class="lead">Python has several built in data types for different kinds of values</p>
+                        <div class="syntax px-3 py-2 rounded">
+                            <pre>
 name='Alice'
 numbers=[1,2,3,4]
 person={'name':'bob','age':25}
 is_python_fun=True
                         </pre>
+                        </div>
                     </div>
                 </div>
-               </div>
             </div>
             <div class="col-md-6">
                 <div class="card card-shadow p-4 mt-4 mt-md-0">
-                  <div class="card-title">
-                      <h2 class="heading fw-bold">Control Structures</h2>
-                  </div>
-                  <div class="card-text">
-                      <p class="lead">Python supports common control structures like if statements, for and while loops</p>
-                      <div class="syntax px-3 py-2">
-                        <pre>
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">Control Structures</h2>
+                    </div>
+                    <div class="card-text">
+                        <p class="lead">Python supports common control structures like if statements, for and while
+                            loops</p>
+                        <div class="syntax px-3 py-2">
+                            <pre>
 if x >9;
 for i in range(5);
 while x>0;
                         </pre>
 
-                      </div>
-                  </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

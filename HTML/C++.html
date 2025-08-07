@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/Language.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        button a {
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+        }
+
+        .sidebar ul {
+            animation-duration: 0.5s;
+        }
+
+        ul li span {
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .list li span {
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid nav-container ">
+        <nav class="navbar  navbar-expand-lg ">
+
+            <img src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" class="navbar-brand ms-4"
+                alt="" style="width: 90px; height: 50px;">
+
+            <button class="navbar-toggler text-white  me-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainmenu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "> <i class="fa fa-bars mb-1" style="font-size: 36px;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center me-5" id="mainmenu">
+                <ul class="navbar-nav fs-5 ms-3  ms-md-5">
+                    <li class="nav-item"><a href="/index.html" class="nav-link text-white px-2">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" id="" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Languages</a>
+                        <ul class="dropdown-menu bg-dark ">
+                            <li><a href="/HTML/JavaScript.html" class="dropdown-item text-white">JavaScript</a></li>
+                            <li><a href="/HTML/Python.html" class="dropdown-item text-white">Python</a></li>
+                            <li><a href="/HTML/C++.html" class="dropdown-item text-white">C++</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/HTML/Community.html" class="nav-link text-white px-2">Community</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle px-2" data-bs-target="dropdown"
+                            data-bs-toggle="dropdown">Syntax</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a href="/HTML/Pythonsyntax.html" class="dropdown-item text-white">Python Syntax</a>
+                            </li>
+                            <li><a href="/HTML/JavaScriptSyntax.html" class="dropdown-item text-white">JavaScript
+                                    Syntax</a></li>
+                            <li><a href="/HTML/C++syntax.html" class="dropdown-item text-white">C++ Syntax</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/HTML/About.html" class="nav-link text-white px-2">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="sidebar py-3  overflow-auto ">
+        <ul class="list-unstyled animate-animated animate__fadeInLeft  lead ">
+            <li class="text-end">
+                <button class="btn text-white btn-close  fw-bold " onclick="closeSide()"></button>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#introduction">Introduction</li>
+            <li data-bs-target="#working" data-bs-toggle="modal">Working</li>
+            <li data-bs-target="#variables" data-bs-toggle="modal">Variables</li>
+            <li data-bs-target="#datatypes" data-bs-toggle="modal">Data Types</li>
+            <li data-bs-target="#functions" data-bs-toggle="modal">Functions</li>
+            <li data-bs-target="#loops" data-bs-toggle="modal">Loops</li>
+            <li data-bs-target="#objects" data-bs-toggle="modal">Objects</li>
+            <li data-bs-target="#classes" data-bs-toggle="modal">Classes</li>
+            <li data-bs-target="#async" data-bs-toggle="modal">Async</li>
+            <li data-bs-target="#dom" data-bs-toggle="modal">DOM</li>
+            <li><a href="/HTML/C++Comparison.html">Comparison</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Bootstrap Modals -->
+
+    <!-- Intoduction modal  -->
+    <div class="modal fade" id="introduction">
+        <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-start  card-title heading">C++ Introduction</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">C++ is a powerful, general-purpose programming language developed by
+                        <strong class="fw-bold">Bjarne Stroustrup</strong> as an extension of the C language. It is
+                        known for its high performance and control over system resources and memory, making it suitable
+                        for developing a wide range of applications, including operating systems, game engines, and
+                        high-performance computing software.
+                    </p>
+
+                    <h2 class="text-start fw-bold">History</h2>
+                    <p class="lead px-2 text-start">
+                        C++ was created by <strong class="fw-bold">Bjarne Stroustrup</strong> at Bell Laboratories in
+                        1979. It was initially named "C with Classes" as it extended the C programming language with
+                        object-oriented features,influenced by the Simula 67 language. <strong
+                            class="fw-bold">Stroustrup</strong> aimed to combine the efficiency of C with the
+                        organizational benefits of object-oriented programming for large-scale projects, particularly in
+                        simulating distributed systems. </p>
+
+                    <h2 class="text-start fw-bold">Key milestones in C++ history</h2>
+
+                    <ul class="list-unstyled lead text-start">
+                        <li><span>1979</span> Bjarne Stroustrup begins development of "C with Classes" at Bell Labs.
+                        </li>
+                        <li><span>1983</span> "C with Classes" is renamed C++, symbolizing its evolution from C using
+                            the increment operator.</li>
+                        <li><span>1985</span> The first commercial version of C++ is released, and "The C++ Programming
+                            Language" by Stroustrup is published.</li>
+                        <li><span>1989</span> C++ 2.0 is released, introducing features like protected and static
+                            members, and multiple inheritance.</li>
+                        <li><span>1998</span> The first international standard for C++, C++98, is released, including
+                            the Standard Template Library (STL).</li>
+                        <li><span>2003</span> C++03 is released, primarily a maintenance update to C++98.</li>
+                        <li><span>2011</span> C++11, a major revision, is released, introducing numerous new features
+                            like lambda expressions, nullptr, and auto.</li>
+                        <li><span>2014</span> C++14 is released, providing minor updates and bug fixes to C++11.</li>
+                        <li><span>2017</span> C++17 is released, a significant update that added new features and
+                            removed obsolete ones.</li>
+                        <li><span>2020</span> C++20 is released, introducing concepts, modules, and coroutines, among
+                            other features.</li>
+                        <li><span>2024</span> C++23, the latest version, is launched, bringing features like pattern
+                            matching and expanded support for ranges.</li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Working modal -->
+    <div class="modal fade " id="working">
+        <div class="modal-dialog modal-lg  modal-dialog-fullscreen  modal-dialog-scrollable rounded">
+            <div class=" modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-start fw-bold card-title heading">C++ Working</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start"><strong class="fw-bold">C++</strong> is a compiled, object-oriented
+                        programming language that enables
+                        the creation of high-performance applications. Its working mechanism involves several key steps
+                    </p>
+                    <h2 class="text-start fw-bold">Writing Source Code</h2>
+                    <p class="lead px-2 text-start">A developer writes C++ code in a text editor or an Integrated
+                        Development Environment (IDE) like Visual Studio, CodeBlocks, or VS Code. This code is
+                        human-readable instructions for the computer.
+                    </p>
+                    <h2 class="text-start fw-bold">Compilation</h2>
+                    <p class="lead px-2 text-start">The C++ source code cannot be directly executed by the computer. It
+                        must first be translated into machine-understandable instructions (machine code). This process
+                        is called compilation and is performed by a C++ compiler (e.g., GCC, Clang, MSVC).
+                        Preprocessing: The compiler first handles preprocessor directives (lines starting with #), such
+                        as #include for including header files, which effectively paste the content of specified files
+                        into the current source file.
+                        Compilation to Object Files: Each .cpp source file is then compiled into an object file (e.g.,
+                        .obj on Windows). This object file contains machine code for that specific source file but is
+                        not yet a complete executable program.</p>
+
+                    <h2 class="text-start fw-bold">Linking</h2>
+                    <p class="lead px-2 text-start">The linker takes all the object files generated from the different
+                        source files, along with any necessary library files (pre-compiled code that provides common
+                        functionalities), and combines them into a single, executable binary file (e.g., .exe on
+                        Windows).
+                    <p>
+
+                    <h2 class="text-start fw-bold">Execution</h2>
+                    <p class="lead px-2 text-start">Once the executable file is created, it can be run by the operating
+                        system. The operating system loads the program into memory and begins executing the machine code
+                        instructions, leading to the program's intended behavior, such as displaying output in a console
+                        window or interacting with a Graphical User Interface (GUI).</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Variables modal  -->
+    <div class="modal fade " id="variables">
+        <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-start  card-title heading">C++ Variables</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">In C++, variables are named storage locations in computer memory
+                        used to hold data values. They are fundamental building blocks of any C++ program, allowing data
+                        to be stored, accessed, and manipulated during program execution.</p>
+
+
+                    <h2 class="text-start fw-bold">Declaration</h2>
+                    <p class="lead px-2 text-start">Before using a variable, it must be declared. This involves
+                        specifying the variable's data type and giving it a name (identifier). The data type determines
+                        the kind of data the variable can store (e.g., integers, floating-point numbers, characters,
+                        booleans). </p>
+                    <div class="syntax text-start py-3 px-2 rounded">
+                        <pre>
+    int age;         // Declares an integer variable named 'age'
+    double price;    // Declares a double-precision floating-point variable named 'price'
+    char initial;    // Declares a character variable named 'initial'
+    bool isActive;   // Declares a boolean variable named 'isActive'
+                        </pre>
+                    </div>
+
+
+                    <h2 class="text-start fw-bold mt-2">Initialization</h2>
+                    <p class="lead px-2 text-start"> Variables can be assigned an initial value during declaration or
+                        later in the program.
+                    </p>
+                    <div class="syntax text-start py-3 px-2 rounded">
+                        <pre>
+    int count = 10;   // Declares and initializes 'count' to 10
+    double temperature;
+    temperature = 25.5; // Assigns a value to 'temperature' later
+                        </pre>
+                    </div>
+
+
+                    <h2 class="text-start fw-bold mt-2">Naming Conventions:</h2>
+                    <p class="lead px-2 text-start">Variable names should be descriptive and follow C++ naming
+                        conventions (e.g., camelCase for most variables, all caps with underscores for constants). They
+                        cannot start with a number and cannot contain special characters other than underscores.
+                    </p>
+
+                    <h2 class="text-start fw-bold">Scope</h2>
+                    <p class="lead text-start px-1">Variables have a defined scope, which determines where they can be
+                        accessed within a program (e.g., local variables within a function, global variables accessible
+                        throughout the program).</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Data Type modal  -->
+    <div class="modal fade " id="datatypes">
+        <div class="modal-dialog modal-lg   modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-start fw-bold heading card-title">C++ Data Types</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead text-start">C++ data types categorize the kind of values a variable can hold and
+                        determine the operations that can be performed on them. They are broadly classified into three
+                        categories</p>
+
+                    <h2 class="text-start fw-bold">Built-in (Primitive) Data Types</h2>
+                    <p class="lead px-2 text-start">These are fundamental types pre-defined by the C++ language.</p>
+                    <ul class="lead list list-unstyled text-start ">
+                        <li><span>int:</span> Stores whole numbers (integers), e.g., 5, -100.</li>
+                        <li><span>float:</span> Stores single-precision floating-point numbers (numbers with decimals),
+                            e.g., 3.14f.
+                        </li>
+                        <li><span>double:</span> Stores double-precision floating-point numbers, offering higher
+                            precision than float, e.g., 3.14159.</li>
+                        <li><span>char:</span> Stores a single character, e.g., 'a', 'Z', '5'.</li>
+                        <li><span>bool</span> Stores boolean values, either true or false.</li>
+                    </ul>
+
+                    <div class="syntax py-2 rounded text-start px-2">
+                        <pre class="">
+int num=20;
+float pi=3.14;
+
+char name='A'
+                        </pre>
+                    </div>
+                    <hr>
+
+                    <h2 class="fw-bold text-start">Derived Data Types</h2>
+                    <p class="lead px-2 text-start mt-2">These are built upon or derived from the primitive data types.
+                    </p>
+                    <ul class="list-unstyled text-start lead">
+                        <li><span>Arrays:</span> Collections of elements of the same data type, accessed by an index,
+                            e.g., int numbers[5];.</li>
+                        <li><span>Pointers:</span> Variables that store memory addresses of other variables, e.g., int
+                            *ptr;.</li>
+                        <li><span>References:</span> Aliases for existing variables, providing another name to access
+                            the same memory location, e.g., int &ref = x;.</li>
+                        <li><span>Functions:</span> Blocks of code that perform specific tasks and can return values of
+                            a particular data type.</li>
+                    </ul>
+
+                    <hr>
+                    <h2 class="fw-bold text-start">User-Defined Data Types:</h2>
+                    <p class="lead px-2 text-start mt-2">These are created by the programmer to represent more complex
+                        data structures.</p>
+                    <ul class="lead text-start list-unstyled">
+                        <li><span>Classes :</span> Blueprints for creating objects, encapsulating data (member
+                            variables) and functions (member methods).</li>
+                        <li><span>Structures (struct):</span> Similar to classes but with public members by default,
+                            used for grouping related data.</li>
+                        <li><span>Unions (union):</span> Allow different data types to share the same memory location,
+                            but only one member can be active at a time.</li>
+                        <li><span>Enumerations (enum):</span> Define a set of named integer constants.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Functions modal  -->
+    <div class="modal fade" id="functions">
+        <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-start  card-title heading">C++ Functions</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-2 text-start">In C++, a function is a named block of code designed to perform a
+                        specific task. Functions are fundamental for organizing code, promoting reusability, and
+                        improving readability.
+                    </p>
+
+                    <h2 class="fw-bold text-start">Declaration and Definition</h2>
+                    <p class="lead px-2 text-start"> <strong class="fw-bold">Declaration:</strong> Specifies the
+                        function's return type, name, and
+                        parameters (function signature). It informs the compiler about the function's existence before
+                        its full definition.
+                    </p>
+                    <p class="lead px-2 text-start"> <strong class="fw-bold">Definition:</strong> Provides the actual
+                        implementation of the function's logic within curly
+                        braces.</p>
+                    <div class="syntax px-2 py-2 text-start rounded">
+                        <pre>
+    return_type function_name(parameter_type1 parameter_name1, parameter_type2 parameter_name2, ...) {
+        // Function body: statements to be executed
+        // return value; (if return_type is not void)
+    }
+    </pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">Return Type</h2>
+                    <p class="lead px-2 text-start">Specifies the data type of the value the function will return.
+                        void indicates that the function does not return any value. </p>
+
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">Parameters</h2>
+                    <p class="lead px-2 text-start">Placeholders for values passed into the function when it is called
+                        (arguments).They can be passed by value (a copy is made) or by reference (direct access to the
+                        original variable). Default parameter values can be assigned.</p>
+                    <hr>
+                    <h2 class="text-start fw-bold">Function Name</h2>
+                    <p class="lead px-2 text-start"> An identifier used to call or invoke the function.</p>
+                    <hr>
+
+                    <h2 class="text-start fw-bold">Function Body</h2>
+                    <p class="lead px-2 text-start"> The enclosed block of statements that define the function's
+                        operations.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Calling a Function</h2>
+                    <p class="lead px-2 mt-2 text-start">Functions are executed only when called by their name followed
+                        by parentheses and arguments (if any). Example: myFunction(argument1, argument2);</p>
+                    <hr>
+                    <h2 class="text-start fw-bold">Types of Functions</h2>
+                    <ul class="lead text-start list-unstyled">
+                        <li><span>User-defined functions:</span> Created by the programmer to perform specific tasks.
+                        </li>
+                        <li><span>Library functions:</span> Pre-defined functions available in C++ standard libraries
+                            (e.g., functions in <cmath> like sqrt(), pow()).</li>
+                        <li><span>main() function:</span> The entry point of every C++ program, where execution begins.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Loops modal  -->
+    <div class="modal fade" id="loops">
+        <div class="modal-dialog  modal-lg  modal-dialog-scrollable rounded">
+            <div class="div modal-content text-center">
+                <div class="modal-header ">
+                    <h1 class="modal-title text-start  card-title heading">C++ Loops</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead px-1 text-start">Loops in C++ are control flow statements that enable the repeated
+                        execution of a block of code based on a specified condition. They are fundamental for automating
+                        repetitive tasks and iterating over collections of data. C++ offers three primary types of
+                        loops:
+                    </p>
+                    <h2 class="fw-bold text-start">for loop</h2>
+                    <p class="lead px text-start">Used when the number of iterations is known or can be determined
+                        before the loop begins.
+                    </p>
+                    <div class="syntax px-2 py-2 text-start rounded">
+                        <pre>
+        for (int i = 0; i < 5; i++) {
+            // This code will execute 5 times
+        }
+    </pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">while loop</h2>
+                    <p class="lead px-2 text-start">Used when the number of iterations is unknown and the loop continues
+                        as long as a specified condition remains true.
+                    </p>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
+        int count = 0;
+        while (count < 5) {
+            // This code will execute as long as count is less than 5
+            count++;
+        }
+    </pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">do.. whole loop</h2>
+                    <p class="lead px-2 text-start">Similar to the while loop, but guarantees at least one execution of
+                        the loop body before checking the condition.</p>
+                    <div class="syntax text-start py-2 px-2 rounded">
+                        <pre>
+        int choice;
+        do {
+            // This code will execute at least once
+            // Prompt for user input
+        } while (choice != 0); // Loop continues until user enters 0
+
+            </pre>
+                    </div>
+                    <hr>
+                    <h2 class="text-start fw-bold mt-2">Control Statements within Loops:</h2>
+                    <ul class="text-start list-unstyled lead">
+                        <li><span>break:</span>Terminates the loop immediately, transferring control to the statement
+                            following the loop.</li>
+                        <li><span>continue:</span>Skips the current iteration of the loop and proceeds to the next
+                            iteration.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Objects modal  -->
+    <div class="modal fade" id="objects">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading text-start card-title fw-bold">C++ Objects</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">In C++, an object is an instance of a class. While a class serves as a
+                        blueprint or a template defining the structure and behavior (data members and member functions)
+                        of a particular type, an object is a concrete realization of that class. </p>
+                    <hr>
+                    <h2 class=" text-start">Key characteristics of C++ objects</h2>
+
+                    <h2 class="text-start fw-bold">Instance of a Class:</h2>
+                    <p class="lead px-2">An object is created from a class, meaning it adheres to the structure and
+                        rules defined by that class.</p>
+                    <h2 class="text-start fw-bold">Memory Allocation:</h2>
+                    <p class="lead px-2">When an object is created, memory is allocated to store its data members. This
+                        is in contrast to a class, which is a logical construct and does not occupy memory until an
+                        object is instantiated.</p>
+                    <h2 class="text-start fw-bold">State and Behavior:</h2>
+                    <p class="lead px-2">Objects possess both a "state" (represented by the values of their data
+                        members) and "behavior" (represented by the actions performed by their member functions).</p>
+                    <h2 class="text-start fw-bold">Runtime Entity:</h2>
+                    <p class="lead px-2">Objects are created and exist during the program's execution, making them
+                        runtime entities.</p>
+                    <h2 class="fw-bold text-start">Access to Class Members:</h2>
+                    <p class="lead px-2">Objects provide the means to access and manipulate the data members and invoke
+                        the member functions defined within their class.</p>
+                    <h2>Example</h2>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+ #include <iostream>
+  #include <string>
+
+    class Car {
+    public:
+    std::string brand;
+    std::string model;
+    int year;
+
+    void displayInfo() {
+        std::cout << "Brand: " << brand << ", Model: " << model << ", Year: " << year << std::endl;
+    }
+};
+
+    int main() {
+    // Creating an object of the Car class
+    Car myCar; 
+
+    // Accessing and setting object's data members
+    myCar.brand = "Toyota";
+    myCar.model = "Camry";
+    myCar.year = 2022;
+
+    // Calling object's member function
+    myCar.displayInfo(); 
+
+    return 0;
+}
+                        </pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Classes modal  -->
+    <div class="modal fade" id="classes">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading card-title text-start fw-bold">C++ Classes</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">In C++, a class is a user-defined data type that serves as a blueprint for
+                        creating objects. It encapsulates data members (variables) and member functions (methods) within
+                        a single unit, promoting organization and reusability in code.</p>
+                    <h2>Key Concepts of C++ Classes</h2>
+                    <h2 class="fw-bold text-start">Encapsulation:</h2>
+                    <p class="lead px-2">Classes bundle data and the functions that operate on that data together,
+                        hiding internal implementation details from external access.</p>
+
+                    <hr>
+                    <h2 class="fw-bold text-start">Data Members:</h2>
+                    <p class="lead px-2">These are variables declared within a class that store the state or attributes
+                        of an object created from that class.</p>
+
+                    <hr>
+                    <h2 class="fw-bold text-start">Member Functions:</h2>
+                    <p class="lead px-2">These are functions declared within a class that define the behaviors or
+                        operations that can be performed on the objects of that class.
+                    </p>
+
+                    <hr>
+                    <h2 class="fw-bold text-start">Access Specifiers:</h2>
+                    <p class="lead px-2">C++ classes use private, public, and protected access specifiers to control the
+                        visibility and accessibility of their members.
+                    </p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Objects:</h2>
+                    <p class="lead px-2">An object is an instance of a class, created based on the class's blueprint. Each object has its own set of data members and can invoke the member functions defined in its class.
+                    </p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Constructors and Destructors:</h2>
+                    <p class="lead px-2"><strong class="fw-bold">Constructors:</strong> Special member functions that are automatically called when an object of the class is created. They are used to initialize the object's data members.</p>
+                    <p class="lead px-2"><strong class="fw-bold">Destructors:</strong> Special member functions that are automatically called when an object is destroyed. They are used to perform cleanup operations, such as releasing dynamically
+                    allocated memory.</p>
+                    <hr>
+                    <h2 class="text-start">Example of a C++ Class:</h2>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+  class Car {
+public: // Public members are accessible from outside the class
+    std::string brand;
+    std::string model;
+    int year;
+
+    // Member function to display car information
+    void displayInfo() {
+        std::cout << "Brand: " << brand << ", Model: " << model << ", Year: " << year << std::endl;
+    }
+
+    // Constructor
+    Car(std::string b, std::string m, int y) : brand(b), model(m), year(y) {}
+};
+
+// Creating an object of the Car class
+Car myCar("Toyota", "Camry", 2023);
+myCar.displayInfo(); // Calling a member function
+                            </pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Async modal  -->
+    <div class="modal fade" id="async">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading text-start card-title fw-bold">JavaScript Async</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">In JavaScript, "async" is a keyword used to define an asynchronous function.
+                        Asynchronous functions are designed to handle operations that might take time to complete, such
+                        as fetching data from a server or reading a file, without blocking the execution of the rest of
+                        the program. This ensures that the user interface remains responsive and the application doesn't
+                        freeze during these long-running tasks.
+                    </p>
+                    <h2 class="fw-bold text-start">Async keyword</h2>
+                    <p class="lead px-2">Placed before the function keyword (or arrow function syntax) to declare an
+                        asynchronous function. An async function automatically returns a Promise. The value returned
+                        from an async function resolves the Promise, while any error thrown within it rejects the
+                        Promise.</p>
+
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+ async function fetchData() {
+  // Asynchronous operations here
+      return "Data fetched successfully!";
+    }
+       </pre>
+                    </div>
+                    <hr>
+
+                    <h2 class="fw-bold text-start">Await keyword</h2>
+                    <p class="lead px-2">Can only be used inside an async function.
+                        Used to pause the execution of the async function until a Promise settles (either resolves or
+                        rejects).
+                        When await is used with a Promise, the function execution pauses until that Promise is
+                        fulfilled, and then resumes with the resolved value.</p>
+
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+    async function getUser() {
+      const response = await fetch('https://api.example.com/users/1');
+      const userData = await response.json();
+      console.log(userData);
+    }
+       </pre>
+                    </div>
+                    <hr>
+                    <h2 class="fw-bold text-start">Error Handling:</h2>
+                    <p class="lead px-2">try...catch blocks are used within async functions to handle errors (rejected
+                        Promises).</p>
+
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>
+  async function getSafeData() {
+      try {
+        const response = await fetch('https://api.example.com/invalid-url');
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+       </pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DOM modal -->
+    <div class="modal fade" id="dom">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable rounded">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title heading text-start fw-bold card-title">JavaScript DOM</h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead px-2">The Document Object Model (DOM) is a programming interface for HTML, XML, and
+                        SVG documents. It represents the structure of a document as a logical tree, where each node in
+                        the tree is an object representing a part of the document, such as an element, attribute, or
+                        text content. While the DOM is not part of the core JavaScript language, it is a crucial Web API
+                        that allows JavaScript to interact with and manipulate the content, structure, and style of web
+                        pages.
+                    </p>
+                    <h2 class="fw-bold text-start">Tree Structure</h2>
+                    <p class="lead px-2">The browser creates a DOM tree when a web page loads, representing the
+                        hierarchical relationship between elements.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Nodes and Objects</h2>
+                    <p class="lead px-2">Each part of the document (elements, attributes, text) is represented as a node
+                        object in the DOM tree, with properties and methods for interaction.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Accessing Elements</h2>
+                    <p class="lead px-2">JavaScript provides methods to select and access specific elements in the DOM,
+                        such as <strong>document.getElementById()</strong> ,<strong>document.querySelector()</strong>,
+                        and <strong>document.getElementsByClassName().</strong></p>
+                    <h2 class="fw-bold text-start">Manipulation</h2>
+                    <p class="lead">Once an element is accessed, JavaScript can modify its properties (e.g., innerHTML,
+                        style), add or remove elements, and change attributes.</p>
+                    <hr>
+                    <h2 class="fw-bold text-start">Example</h2>
+                    <div class="syntax px-2 py-2 rounded">
+                        <pre>// Select an element by its ID
+const demoParagraph = document.getElementById("demo");
+
+// Change the text content of the paragraph
+demoParagraph.innerHTML = "Hello World from JavaScript!";
+
+// Add a CSS class to the paragraph
+demoParagraph.classList.add("highlight");</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row py-5 ">
+            <div class="col-md-12  ">
+                <div class="card card-shadow card-bg text-center py-2">
+                    <h1 class="fw-bold mt-2">C++</h1>
+                    <p class="lead px-5 px-md-1">A Powerful, high-performance language for building system-level
+                        software, games and large applications</p>
+                    <div class="text-center py-3">
+                        <button class="btn btn-primary me-3" id="Showside" onclick="show()">Start Learning
+                            More....</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4 ">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">🔰 Syntax Overview</h2>
+                    </div>
+                    <div class="card-text">
+                        <div class="syntax rounded w-100">
+                            <pre class="px-5 py-2">
+#include iostream;
+using namespace std;
+int main(){
+    cout>>"Hello World";
+    return 0;
+}
+
+type variableName= value;
+int myNum=15;
+string myText='Hello';
+char myLetter='D';
+float pi=3.14
+
+if(age>18){
+    cout>>"Adult";
+}
+
+for (int i=0; i<=5;i++){
+     cout>>i>>"";
+}
+
+int add(int a, int b){
+    return a+b;
+}
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="heading fw-bold">💡 Key Features</h2>
+                    </div>
+                    <div class="card-text">
+                        <ul class="lead">
+                            <li>Object-Oriented Programming(OOP)</li>
+                            <li>Low-level memory Manipulation with poninters</li>
+                            <li>Supports procedural and generic programming languages</li>
+                            <li>Compiled and statically typed for performance</li>
+                            <li>Standard Template library</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card card-shadow p-4">
+                    <h2 class="heading fw-bold">🛠️ Common Use Cases</h2>
+                    <div class="row">
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-shadow card-bg p-4 h-100">
+                                <h4>Game Development</h4>
+                                <p class="lead">Used in engines like Unreal Engine</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-shadow card-bg p-4 h-100">
+                                <h4>Embedded Systems</h4>
+                                <p class="lead">Firmware and low-level programming </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4 ">
+                            <div class="card card-shadow card-bg p-4 h-100">
+                                <h4>Web Browsers</h4>
+                                <p class="lead">Chrome and Firefox use C++ for core performance </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card card-shadow p-4">
+                    <div class="card-title">
+                        <h2 class="fw-bold heading">📚 Learning Resources</h2>
+                    </div>
+                    <div class="card-text">
+                        <ul class="lead">
+                            <li><a href="https://cplusplus.com/">cplusplus.com</a></li>
+                            <li><a href="https://www.learncpp.com/">LearnCpp.com</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/c-plus-plus/">GeeksforGeeks C++</a></li>
+                            <li><a href="https://en.cppreference.com/">C++ Standard Library Reference</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="fw-bold">🧭 Related Languages</h2>
+                        <div class="btn-group mt-4 px-4">
+                            <button class="btn btn-primary"><a href="/HTML/Python.html">Python</a></button>
+                            <button class="btn btn-secondary "><a href="/HTML/JavaScript.html">JavaScript</button>
+                            <button class="btn btn-warning"><a href="">Java</a></button>
+                            <button class="btn btn-danger"><a href="">HTML</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid ">
+            <div class="row py-5 ms-md-3 ms-0 text-white px-4 ">
+                <div class="col-sm-3 text-start mt-4">
+                    <h5>About Us</h5>
+                    <a href="/HTML/Community.html" class="d-block mt-2">Community</a>
+                    <a href="/HTML/About.html" class="d-block mt-2">About Us</a>
+                    <a href="/HTML/Career.html" class="d-block mt-2">Career</a>
+                    <a href="/HTML/Team.html" class="d-block mt-2">Team</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4 ">
+                    <h5>Quick Links</h5>
+                    <a href="/HTML/Documentation.html" class="d-block mt-2">Documentation</a>
+                    <a href="/HTML/API.html" class="d-block mt-2">API Reference</a>
+                    <a href="/HTML/Blog.html" class="d-block mt-2">Blog</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4 ">
+                    <h5>Contact Info</h5>
+                    <a href="/HTML/support.html" class="d-block mt-2">Support Center</a>
+                    <a href="/HTML/Privacy.html" class="d-block mt-2">Privacy Policy</a>
+                    <a href="/HTML/Contact.html" class="d-block mt-2">Contact Us</a>
+                </div>
+                <div class="col-sm-3 text-start mt-4">
+                    <h5>Social links</h5>
+                    <a href="https://facebook.com"><i class="fa fa-facebook ms-2"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter ms-2"></i></a>
+                    <a href="https://instagram.com"><i class="fa fa-instagram ms-2"></i></a>
+                    <a href="https://github.com"><i class="fa fa-github ms-2"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white py-2" style="font-family: 'Lato', serif; ">
+                    <p class="">&copy; 2025 CodeCompanion : All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const sidebar = document.querySelector('.sidebar');
+    function show() {
+        sidebar.style.display = 'block';
+    }
+
+    function closeSide() {
+        sidebar.style.display = 'none';
+    }
+
+</script>
+
+</html>

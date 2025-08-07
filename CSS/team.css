@@ -31,7 +31,9 @@ body {
         .dropdown li a:hover {
             background-color: blue;
         }
-
+a.nav-link.dropdown-toggle::after {
+  vertical-align: middle;
+}
         footer {
             background-color: #0c1023;
         }

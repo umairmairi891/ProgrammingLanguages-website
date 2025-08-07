@@ -66,6 +66,9 @@
  .card-shadow {
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
  }
+ a.nav-link.dropdown-toggle::after {
+  vertical-align: middle;
+}
 
  .card h2 {
      color: #303F9F;
@@ -127,6 +130,10 @@
  .sidebar ul li:hover {
      background-color: blue;
      transition: .4s;
+ }
+
+ .btn-group button a{
+    color:#040c2e;
  }
 
  @media (max-width:600px) {
